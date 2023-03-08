@@ -1,0 +1,7 @@
+R:\Source\GSS_Biztalk\CxmlSchemas\bin\Debug\CxmlSchemas.dll
+R:\Source\GSS_Biztalk\CxmlSchemas\bin\Debug\CxmlSchemas.pdb
+R:\Source\GSS_Biztalk\CxmlSchemas\bin\Debug\Microsoft.BizTalk.DTDToXSDGenerator.dll
+R:\Source\GSS_Biztalk\CxmlSchemas\obj\Debug\CxmlSchemas.btproj.CoreCompileInputs.cache
+R:\Source\GSS_Biztalk\CxmlSchemas\obj\Debug\CxmlSchemas.btproj.CopyComplete
+R:\Source\GSS_Biztalk\CxmlSchemas\obj\Debug\CxmlSchemas.dll
+R:\Source\GSS_Biztalk\CxmlSchemas\obj\Debug\CxmlSchemas.pdb

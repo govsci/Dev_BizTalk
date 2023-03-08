@@ -1,0 +1,1017 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="ff6e10b5-9c8d-4836-a1ca-dbfbd7a2ebe4" LowerBound="1.1" HigherBound="236.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="Inbound_Status_Doc_X12_Process" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="fe04e45d-f809-490e-b5a1-6546e8f09d1b" ParentLink="Module_PortType" LowerBound="4.1" HigherBound="11.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="Inbound_Status_Doc_X12_Process_PortType_1" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="44be5565-54a3-41a0-986f-8ba4610a8ad0" ParentLink="PortType_OperationDeclaration" LowerBound="6.1" HigherBound="10.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="ff87baaa-2849-4c8a-9561-eb7f4be0a43f" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="8.13" HigherBound="8.35">
+                    <om:Property Name="Ref" Value="System.Xml.XmlDocument" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="CorrelationType" OID="3d1bd3a4-f21c-44bf-8e04-e4fc9ae267f6" ParentLink="Module_CorrelationType" LowerBound="11.1" HigherBound="15.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="CorrelationType_1" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PropertyRef" OID="bb139c94-e16a-4829-b891-5943bd6409c9" ParentLink="CorrelationType_PropertyRef" LowerBound="13.9" HigherBound="13.28">
+                <om:Property Name="Ref" Value="BTS.ReceivePortName" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="PropertyRef_1" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="f6adcb2b-dac1-42b9-901a-291dcb3e7909" ParentLink="Module_ServiceDeclaration" LowerBound="15.1" HigherBound="235.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="Inbound_Status_Doc_X12_Process_Orch" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="VariableDeclaration" OID="25639ed9-6606-49d0-91cb-c7f094675360" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="29.1" HigherBound="30.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="BizTalkLibrary.Orchestrations.OrchestrationFunctions" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="library" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="ce37864e-6341-4ffd-b36f-ae9fdf00bd03" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="30.1" HigherBound="31.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="timestamp" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="7474931d-c5fb-468f-92b4-525a89e548c2" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="31.1" HigherBound="32.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="docType" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="ac48b044-6894-4e54-bce6-f16b1c124b79" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="32.1" HigherBound="33.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="BizTalkLibrary.Classes.Constants.DUMP_FOLDERS" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="dumpFolders" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="CorrelationDeclaration" OID="2bf14be1-e9f9-4b14-944b-c90d1f1a161d" ParentLink="ServiceDeclaration_CorrelationDeclaration" LowerBound="20.1" HigherBound="21.1">
+                <om:Property Name="Type" Value="Inbound_Status_Doc_X12_Process.CorrelationType_1" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Correlation_1" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="StatementRef" OID="1e2fe2bf-da6c-4c15-b157-a3041954421f" ParentLink="CorrelationDeclaration_StatementRef" LowerBound="36.87" HigherBound="36.111">
+                    <om:Property Name="Initializes" Value="True" />
+                    <om:Property Name="Ref" Value="dd61eb18-b190-46be-af45-b12bfe42bd9b" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="StatementRef_1" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="StatementRef" OID="08238a8a-02c1-4fdd-9f5d-e373c2d45d05" ParentLink="CorrelationDeclaration_StatementRef" LowerBound="132.90" HigherBound="132.103">
+                    <om:Property Name="Initializes" Value="False" />
+                    <om:Property Name="Ref" Value="111a0ab0-9f42-46a7-9c6e-5eaa365956d8" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="StatementRef_2" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="4403e29c-3b7f-4d27-b8e0-fb2140460f6a" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="21.1" HigherBound="22.1">
+                <om:Property Name="Type" Value="System.Xml.XmlDocument" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="xml" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="7a72f0e8-b1a6-46c1-b1d0-bcb4f3a7fc05" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="22.1" HigherBound="23.1">
+                <om:Property Name="Type" Value="EdiSchemas.X12.X12_00401_997" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="x997" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="faab3718-a696-438e-8e6a-fc5ff8861a7e" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="23.1" HigherBound="24.1">
+                <om:Property Name="Type" Value="EdiSchemas.X12.X12_00401_810" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="x810" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="c9524d78-9881-4575-84be-63ae5b6d08ec" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="24.1" HigherBound="25.1">
+                <om:Property Name="Type" Value="EdiSchemas.X12.X12_00401_855" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="x855" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="4f4b3429-0cd2-4c28-a564-67f20aa98e8a" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="25.1" HigherBound="26.1">
+                <om:Property Name="Type" Value="EdiSchemas.X12.X12_00401_856" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="x856" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="4f3d3dbc-dec9-4d0f-af06-c63173f19d4f" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="26.1" HigherBound="27.1">
+                <om:Property Name="Type" Value="EdiSchemas.cXML.Fulfill.cXML_Fulfill" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="orderConfirm" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="4513861e-f251-4b3b-b556-c4eb49dbfbe3" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="27.1" HigherBound="28.1">
+                <om:Property Name="Type" Value="EdiSchemas.cXML.Fulfill.cXML_Fulfill" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="asn" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="495a5659-827f-4020-b27a-8940de7b1f80" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="28.1" HigherBound="29.1">
+                <om:Property Name="Type" Value="EdiSchemas.cXML.cXMLinvoice" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="invoice" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="96e07047-eaaf-4fec-9205-2e7709eed2b3" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="dd61eb18-b190-46be-af45-b12bfe42bd9b" ParentLink="ServiceBody_Statement" LowerBound="35.1" HigherBound="41.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="Inbound_Status_Doc_X12_Process_Port_1" />
+                    <om:Property Name="MessageName" Value="xml" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Receive_1" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Scope" OID="f56b1752-254d-40f3-a719-1806dfd04738" ParentLink="ServiceBody_Statement" LowerBound="41.1" HigherBound="233.1">
+                    <om:Property Name="InitializedTransactionType" Value="True" />
+                    <om:Property Name="IsSynchronized" Value="False" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Scope_1" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="VariableAssignment" OID="e20f5949-a76f-40a8-8895-c46757eebfaa" ParentLink="ComplexStatement_Statement" LowerBound="46.1" HigherBound="50.1">
+                        <om:Property Name="Expression" Value="timestamp = library.GetTimeStamp(System.DateTime.Now);&#xD;&#xA;docType = library.GetEdiDocumentType(xml);&#xD;&#xA;library.CreateDump(dumpFolders.INBOUND_STATUS_PROCESSED_INCOMING(),docType,timestamp,xml,true);&#xD;&#xA;" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Expression_1" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="Decision" OID="6b911853-0410-4261-bf40-175b2d1763ef" ParentLink="ComplexStatement_Statement" LowerBound="50.1" HigherBound="128.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Decide_1" />
+                        <om:Property Name="Signal" Value="False" />
+                        <om:Element Type="DecisionBranch" OID="c0f7212c-abe5-4e66-8e67-4336bcb5f749" ParentLink="ReallyComplexStatement_Branch" LowerBound="51.21" HigherBound="75.1">
+                            <om:Property Name="Expression" Value="docType == &quot;855&quot;" />
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="855" />
+                            <om:Property Name="Signal" Value="False" />
+                            <om:Element Type="Construct" OID="00c0624f-8ba7-4a6b-b157-6a31d09ccf5b" ParentLink="ComplexStatement_Statement" LowerBound="53.1" HigherBound="59.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Assign855_1" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="MessageAssignment" OID="a27b390d-a98f-47c7-a50a-5bbe6664e89b" ParentLink="ComplexStatement_Statement" LowerBound="56.1" HigherBound="58.1">
+                                    <om:Property Name="Expression" Value="x855 = xml;" />
+                                    <om:Property Name="ReportToAnalyst" Value="False" />
+                                    <om:Property Name="Name" Value="MessageAssignment_1" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                                <om:Element Type="MessageRef" OID="810001fe-22b2-48fd-9937-ff5eb9b94e89" ParentLink="Construct_MessageRef" LowerBound="54.35" HigherBound="54.39">
+                                    <om:Property Name="Ref" Value="x855" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="Construct" OID="259a7ddf-78e9-4641-8ae4-e90c28f07ec3" ParentLink="ComplexStatement_Statement" LowerBound="59.1" HigherBound="65.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Construct_855_997_1" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="Transform" OID="daae785f-f233-4908-a1a5-0b2301c57e9a" ParentLink="ComplexStatement_Statement" LowerBound="62.1" HigherBound="64.1">
+                                    <om:Property Name="ClassName" Value="Inbound_Status_Doc_X12_Process.Maps.Map_855_997" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Transform_855_997_1" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="MessagePartRef" OID="72547135-bf7a-486f-8245-644e421b8532" ParentLink="Transform_InputMessagePartRef" LowerBound="63.97" HigherBound="63.101">
+                                        <om:Property Name="MessageRef" Value="x855" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="MessagePartReference_1" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                    <om:Element Type="MessagePartRef" OID="8e297339-70ac-4a09-9a74-2146fd31cdff" ParentLink="Transform_OutputMessagePartRef" LowerBound="63.40" HigherBound="63.44">
+                                        <om:Property Name="MessageRef" Value="x997" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="MessagePartReference_2" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="MessageRef" OID="b1356993-613b-4753-9b67-b675f1263acf" ParentLink="Construct_MessageRef" LowerBound="60.35" HigherBound="60.39">
+                                    <om:Property Name="Ref" Value="x997" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="Construct" OID="2b837692-5723-46c1-97b1-1ebc5b3facf8" ParentLink="ComplexStatement_Statement" LowerBound="65.1" HigherBound="71.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Construct_OrderConfirm_1" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="Transform" OID="63b09ac0-eed1-44d7-870c-20655abbd01b" ParentLink="ComplexStatement_Statement" LowerBound="68.1" HigherBound="70.1">
+                                    <om:Property Name="ClassName" Value="Inbound_Status_Doc_X12_Process.Maps.Map_855" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Transform_OrderConfirm_1" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="MessagePartRef" OID="efda9ff6-baad-4b3f-bac9-8b4eb1c0aea8" ParentLink="Transform_InputMessagePartRef" LowerBound="69.101" HigherBound="69.105">
+                                        <om:Property Name="MessageRef" Value="x855" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="MessagePartReference_7" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                    <om:Element Type="MessagePartRef" OID="fc4cfd86-0d60-42b5-8fa3-f9a98e5ea1e1" ParentLink="Transform_OutputMessagePartRef" LowerBound="69.40" HigherBound="69.52">
+                                        <om:Property Name="MessageRef" Value="orderConfirm" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="MessagePartReference_8" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="MessageRef" OID="2032582a-a874-41f8-82a9-601977648698" ParentLink="Construct_MessageRef" LowerBound="66.35" HigherBound="66.47">
+                                    <om:Property Name="Ref" Value="orderConfirm" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="VariableAssignment" OID="dc4640b0-22f7-41df-a027-be359e8a8d2d" ParentLink="ComplexStatement_Statement" LowerBound="71.1" HigherBound="74.1">
+                                <om:Property Name="Expression" Value="library.Create997(timestamp,x997);&#xD;&#xA;library.CreateStatusDocFromEdi(orderConfirm,docType);" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Process_OrderConfirm_1" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="DecisionBranch" OID="6a10da6e-f370-4bf6-992f-fcd6e2235e55" ParentLink="ReallyComplexStatement_Branch" LowerBound="75.26" HigherBound="99.1">
+                            <om:Property Name="Expression" Value="docType == &quot;856&quot;" />
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="856" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="Construct" OID="98d9d853-1f7b-4b1b-90a9-5d09a61f723c" ParentLink="ComplexStatement_Statement" LowerBound="77.1" HigherBound="83.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Assign856_1" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="MessageAssignment" OID="a434bd33-a6c8-4be7-b9d7-60780a18e22b" ParentLink="ComplexStatement_Statement" LowerBound="80.1" HigherBound="82.1">
+                                    <om:Property Name="Expression" Value="x856 = xml;" />
+                                    <om:Property Name="ReportToAnalyst" Value="False" />
+                                    <om:Property Name="Name" Value="MessageAssignment_2" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="MessageRef" OID="1b9b2404-20b9-4b32-a089-cdb3c3672440" ParentLink="Construct_MessageRef" LowerBound="78.35" HigherBound="78.39">
+                                    <om:Property Name="Ref" Value="x856" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="Construct" OID="599ce786-11df-48a9-92f2-3f19d10126db" ParentLink="ComplexStatement_Statement" LowerBound="83.1" HigherBound="89.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Construct_856_997_1" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="Transform" OID="4712c5e7-fc6f-48d1-9123-ad8ea34229d0" ParentLink="ComplexStatement_Statement" LowerBound="86.1" HigherBound="88.1">
+                                    <om:Property Name="ClassName" Value="Inbound_Status_Doc_X12_Process.Maps.Map_856_997" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Transform_856_997_1" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="MessagePartRef" OID="67bdb38c-6691-40ae-bbd0-92bbbc1dc477" ParentLink="Transform_InputMessagePartRef" LowerBound="87.97" HigherBound="87.101">
+                                        <om:Property Name="MessageRef" Value="x856" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="MessagePartReference_3" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                    <om:Element Type="MessagePartRef" OID="7a3840f4-6065-4a8d-ad5f-395b70c64eb3" ParentLink="Transform_OutputMessagePartRef" LowerBound="87.40" HigherBound="87.44">
+                                        <om:Property Name="MessageRef" Value="x997" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="MessagePartReference_4" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="MessageRef" OID="81082586-8396-492a-9def-aade091048b5" ParentLink="Construct_MessageRef" LowerBound="84.35" HigherBound="84.39">
+                                    <om:Property Name="Ref" Value="x997" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="Construct" OID="527c7040-9e5f-4458-99fd-dde8b2196b10" ParentLink="ComplexStatement_Statement" LowerBound="89.1" HigherBound="95.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Construct_ASN_1" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="Transform" OID="c6544cec-f4e7-46a6-a60b-19b079c3f4a1" ParentLink="ComplexStatement_Statement" LowerBound="92.1" HigherBound="94.1">
+                                    <om:Property Name="ClassName" Value="Inbound_Status_Doc_X12_Process.Maps.Map_856" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Transform_ASN_1" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="MessagePartRef" OID="6d5ec5de-508e-4009-879b-4bb5b01fdace" ParentLink="Transform_InputMessagePartRef" LowerBound="93.92" HigherBound="93.96">
+                                        <om:Property Name="MessageRef" Value="x856" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="MessagePartReference_9" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                    <om:Element Type="MessagePartRef" OID="881ccfa5-9dc9-4a1e-8fd5-85d5945cbb66" ParentLink="Transform_OutputMessagePartRef" LowerBound="93.40" HigherBound="93.43">
+                                        <om:Property Name="MessageRef" Value="asn" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="MessagePartReference_10" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="MessageRef" OID="9b13c0fc-72fd-4ae1-a5a6-9675ca8d280b" ParentLink="Construct_MessageRef" LowerBound="90.35" HigherBound="90.38">
+                                    <om:Property Name="Ref" Value="asn" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="VariableAssignment" OID="8485574e-f82c-4548-a8f0-6d5505e73b4e" ParentLink="ComplexStatement_Statement" LowerBound="95.1" HigherBound="98.1">
+                                <om:Property Name="Expression" Value="library.Create997(timestamp,x997);&#xD;&#xA;library.CreateStatusDocFromEdi(asn,docType);" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Process_ASN_1" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="DecisionBranch" OID="ae2709c5-78fe-41bc-8b39-71597a4ab8e4" ParentLink="ReallyComplexStatement_Branch" LowerBound="99.26" HigherBound="123.1">
+                            <om:Property Name="Expression" Value="docType == &quot;810&quot;" />
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="810" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="Construct" OID="d8ca4b1c-919f-46f2-8b30-cbc9987246d0" ParentLink="ComplexStatement_Statement" LowerBound="101.1" HigherBound="107.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Assign810_1" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="MessageAssignment" OID="b8e97d56-db4e-463f-8184-5c2f65a79cbb" ParentLink="ComplexStatement_Statement" LowerBound="104.1" HigherBound="106.1">
+                                    <om:Property Name="Expression" Value="x810 = xml;" />
+                                    <om:Property Name="ReportToAnalyst" Value="False" />
+                                    <om:Property Name="Name" Value="MessageAssignment_3" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                                <om:Element Type="MessageRef" OID="5b77c783-b731-4a98-8aa7-00910f5fb1eb" ParentLink="Construct_MessageRef" LowerBound="102.35" HigherBound="102.39">
+                                    <om:Property Name="Ref" Value="x810" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="Construct" OID="c5d6564f-41d9-43ae-8506-a6456d6b4b81" ParentLink="ComplexStatement_Statement" LowerBound="107.1" HigherBound="113.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Construct_810_997_3" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="Transform" OID="b7594eea-b45d-406b-9e92-b23b6e6d4cbb" ParentLink="ComplexStatement_Statement" LowerBound="110.1" HigherBound="112.1">
+                                    <om:Property Name="ClassName" Value="Inbound_Status_Doc_X12_Process.Maps.Map_810_997" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Transform_81_997_1" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="MessagePartRef" OID="9596c376-429f-41d3-b3ef-4047d788e655" ParentLink="Transform_InputMessagePartRef" LowerBound="111.97" HigherBound="111.101">
+                                        <om:Property Name="MessageRef" Value="x810" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="MessagePartReference_5" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                    <om:Element Type="MessagePartRef" OID="89c17d6f-180e-40a6-87d3-627ef45b241d" ParentLink="Transform_OutputMessagePartRef" LowerBound="111.40" HigherBound="111.44">
+                                        <om:Property Name="MessageRef" Value="x997" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="MessagePartReference_6" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="MessageRef" OID="0f8384d4-c73f-4d3c-8f6c-2ac2a418b7f3" ParentLink="Construct_MessageRef" LowerBound="108.35" HigherBound="108.39">
+                                    <om:Property Name="Ref" Value="x997" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="Construct" OID="4d501e4d-594f-43fc-a6e5-66f9c05c69b9" ParentLink="ComplexStatement_Statement" LowerBound="113.1" HigherBound="119.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Construct_Invoice_1" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="Transform" OID="9dc16c12-d15d-46af-a73c-35142d2970f5" ParentLink="ComplexStatement_Statement" LowerBound="116.1" HigherBound="118.1">
+                                    <om:Property Name="ClassName" Value="Inbound_Status_Doc_X12_Process.Maps.Map_810" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Transform_Invoice_1" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="MessagePartRef" OID="fc359d1b-ceec-40a9-b9bf-88f1b3d03d20" ParentLink="Transform_InputMessagePartRef" LowerBound="117.96" HigherBound="117.100">
+                                        <om:Property Name="MessageRef" Value="x810" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="MessagePartReference_11" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                    <om:Element Type="MessagePartRef" OID="c3e0a846-4fdb-4b58-9c80-e4e14b0b257b" ParentLink="Transform_OutputMessagePartRef" LowerBound="117.40" HigherBound="117.47">
+                                        <om:Property Name="MessageRef" Value="invoice" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="MessagePartReference_12" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="MessageRef" OID="4a4d9840-44d0-4db4-840f-6c432c16fe1f" ParentLink="Construct_MessageRef" LowerBound="114.35" HigherBound="114.42">
+                                    <om:Property Name="Ref" Value="invoice" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="VariableAssignment" OID="c0bda29a-8fc9-457e-b268-255565507f54" ParentLink="ComplexStatement_Statement" LowerBound="119.1" HigherBound="122.1">
+                                <om:Property Name="Expression" Value="library.Create997(timestamp,x997);&#xD;&#xA;library.CreateStatusDocFromEdi(invoice,docType);" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Process_Invoice_1" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="DecisionBranch" OID="70a2dc58-8cea-494d-800e-5b2b6899eeb2" ParentLink="ReallyComplexStatement_Branch">
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Else" />
+                            <om:Property Name="Signal" Value="False" />
+                            <om:Element Type="VariableAssignment" OID="fe33a64c-6b04-4688-9b64-690631a65fcb" ParentLink="ComplexStatement_Statement" LowerBound="125.1" HigherBound="127.1">
+                                <om:Property Name="Expression" Value="library.CreateDump(dumpFolders.INBOUND_STATUS_FAILED(),timestamp,&quot;&quot;,xml,true);" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Expression_4" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="While" OID="9d025611-39b3-4c5e-bd0a-6afcf570de40" ParentLink="ComplexStatement_Statement" LowerBound="128.1" HigherBound="216.1">
+                        <om:Property Name="Expression" Value="true" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Loop_1" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Receive" OID="111a0ab0-9f42-46a7-9c6e-5eaa365956d8" ParentLink="ComplexStatement_Statement" LowerBound="131.1" HigherBound="133.1">
+                            <om:Property Name="Activate" Value="False" />
+                            <om:Property Name="PortName" Value="Inbound_Status_Doc_X12_Process_Port_1" />
+                            <om:Property Name="MessageName" Value="xml" />
+                            <om:Property Name="OperationName" Value="Operation_1" />
+                            <om:Property Name="OperationMessageName" Value="Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Receive_1" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="VariableAssignment" OID="b316e11b-5d27-4b7e-9038-8a7f6db85bb2" ParentLink="ComplexStatement_Statement" LowerBound="133.1" HigherBound="137.1">
+                            <om:Property Name="Expression" Value="timestamp = library.GetTimeStamp(System.DateTime.Now);&#xD;&#xA;docType = library.GetEdiDocumentType(xml);&#xD;&#xA;library.CreateDump(dumpFolders.INBOUND_STATUS_PROCESSED_INCOMING(),docType,timestamp,xml,true);&#xD;&#xA;" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Expression_2" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Decision" OID="9b7ecd03-60ab-41dc-aa45-03bd516ef176" ParentLink="ComplexStatement_Statement" LowerBound="137.1" HigherBound="215.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Decide_1" />
+                            <om:Property Name="Signal" Value="False" />
+                            <om:Element Type="DecisionBranch" OID="21c37d9b-e8fe-4590-be93-af38b637c3aa" ParentLink="ReallyComplexStatement_Branch" LowerBound="138.25" HigherBound="162.1">
+                                <om:Property Name="Expression" Value="docType == &quot;855&quot;" />
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="855" />
+                                <om:Property Name="Signal" Value="False" />
+                                <om:Element Type="Construct" OID="23421fca-90bf-4864-9058-e2a0da06208a" ParentLink="ComplexStatement_Statement" LowerBound="140.1" HigherBound="146.1">
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Assign855_1" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="MessageAssignment" OID="1fc823b1-4460-4eb5-a542-279944461f11" ParentLink="ComplexStatement_Statement" LowerBound="143.1" HigherBound="145.1">
+                                        <om:Property Name="Expression" Value="x855 = xml;" />
+                                        <om:Property Name="ReportToAnalyst" Value="False" />
+                                        <om:Property Name="Name" Value="MessageAssignment_1" />
+                                        <om:Property Name="Signal" Value="True" />
+                                    </om:Element>
+                                    <om:Element Type="MessageRef" OID="ab99ac70-7fa6-41d5-a0f2-5ee1984ac660" ParentLink="Construct_MessageRef" LowerBound="141.39" HigherBound="141.43">
+                                        <om:Property Name="Ref" Value="x855" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="Construct" OID="26650ade-07cd-470f-803f-6dae97256a26" ParentLink="ComplexStatement_Statement" LowerBound="146.1" HigherBound="152.1">
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Construct_855_997_1" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="MessageRef" OID="e3fb48c4-8243-45ab-af56-3ca26423d825" ParentLink="Construct_MessageRef" LowerBound="147.39" HigherBound="147.43">
+                                        <om:Property Name="Ref" Value="x997" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                    <om:Element Type="Transform" OID="e7317458-60d4-4d87-83fc-937653102fb5" ParentLink="ComplexStatement_Statement" LowerBound="149.1" HigherBound="151.1">
+                                        <om:Property Name="ClassName" Value="Inbound_Status_Doc_X12_Process.Maps.Map_855_997" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Transform_855_997_1" />
+                                        <om:Property Name="Signal" Value="True" />
+                                        <om:Element Type="MessagePartRef" OID="c07581ae-5371-4a51-8592-0a3493b8b3e4" ParentLink="Transform_OutputMessagePartRef" LowerBound="150.44" HigherBound="150.48">
+                                            <om:Property Name="MessageRef" Value="x997" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="MessagePartReference_2" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                        <om:Element Type="MessagePartRef" OID="25e7ce9f-0713-4b56-aa7f-1a59b3e9aa9c" ParentLink="Transform_InputMessagePartRef" LowerBound="150.101" HigherBound="150.105">
+                                            <om:Property Name="MessageRef" Value="x855" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="MessagePartReference_1" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="Construct" OID="3afa7c8d-5c4d-400b-92c7-92d97d84e8c9" ParentLink="ComplexStatement_Statement" LowerBound="152.1" HigherBound="158.1">
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Construct_OrderConfirm_1" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="Transform" OID="36c580c4-569b-45a6-9daa-cee65b0a63b8" ParentLink="ComplexStatement_Statement" LowerBound="155.1" HigherBound="157.1">
+                                        <om:Property Name="ClassName" Value="Inbound_Status_Doc_X12_Process.Maps.Map_855" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Transform_OrderConfirm_1" />
+                                        <om:Property Name="Signal" Value="True" />
+                                        <om:Element Type="MessagePartRef" OID="29f23f8e-e9ce-4237-83fe-b9af4fa7b20e" ParentLink="Transform_OutputMessagePartRef" LowerBound="156.44" HigherBound="156.56">
+                                            <om:Property Name="MessageRef" Value="orderConfirm" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="MessagePartReference_8" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                        <om:Element Type="MessagePartRef" OID="66d6c3f1-dc73-48f7-92af-298574e0639e" ParentLink="Transform_InputMessagePartRef" LowerBound="156.105" HigherBound="156.109">
+                                            <om:Property Name="MessageRef" Value="x855" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="MessagePartReference_7" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                    </om:Element>
+                                    <om:Element Type="MessageRef" OID="3346a16f-867c-4755-b74d-3477716d314e" ParentLink="Construct_MessageRef" LowerBound="153.39" HigherBound="153.51">
+                                        <om:Property Name="Ref" Value="orderConfirm" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="VariableAssignment" OID="1b7fb9b3-09b7-48f8-8b4b-d1d2ff3b194f" ParentLink="ComplexStatement_Statement" LowerBound="158.1" HigherBound="161.1">
+                                    <om:Property Name="Expression" Value="library.Create997(timestamp,x997);&#xD;&#xA;library.CreateStatusDocFromEdi(orderConfirm,docType);" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Process_OrderConfirm_1" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="DecisionBranch" OID="692b9233-61f5-4b6c-8e2c-6416b9ef50dd" ParentLink="ReallyComplexStatement_Branch" LowerBound="162.30" HigherBound="186.1">
+                                <om:Property Name="Expression" Value="docType == &quot;856&quot;" />
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="856" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="Construct" OID="403b54e1-2d52-468b-9a01-a51fc0cf50d3" ParentLink="ComplexStatement_Statement" LowerBound="164.1" HigherBound="170.1">
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Assign856_1" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="MessageAssignment" OID="0c884e82-2b44-47e2-a728-e645e43690ea" ParentLink="ComplexStatement_Statement" LowerBound="167.1" HigherBound="169.1">
+                                        <om:Property Name="Expression" Value="x856 = xml;" />
+                                        <om:Property Name="ReportToAnalyst" Value="False" />
+                                        <om:Property Name="Name" Value="MessageAssignment_2" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                    <om:Element Type="MessageRef" OID="72a7b75b-4202-41f5-b790-b80870967d24" ParentLink="Construct_MessageRef" LowerBound="165.39" HigherBound="165.43">
+                                        <om:Property Name="Ref" Value="x856" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="Construct" OID="eda55d34-83ec-48a9-a19a-f83773a72ebf" ParentLink="ComplexStatement_Statement" LowerBound="170.1" HigherBound="176.1">
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Construct_856_997_1" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="MessageRef" OID="121620d1-8463-46ad-bff9-98a95db21a80" ParentLink="Construct_MessageRef" LowerBound="171.39" HigherBound="171.43">
+                                        <om:Property Name="Ref" Value="x997" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                    <om:Element Type="Transform" OID="f3717def-da5b-49e1-932c-0df6bd3b54e4" ParentLink="ComplexStatement_Statement" LowerBound="173.1" HigherBound="175.1">
+                                        <om:Property Name="ClassName" Value="Inbound_Status_Doc_X12_Process.Maps.Map_856_997" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Transform_856_997_1" />
+                                        <om:Property Name="Signal" Value="True" />
+                                        <om:Element Type="MessagePartRef" OID="78eec78b-80e5-4c37-bc30-c6aa7f1516a9" ParentLink="Transform_InputMessagePartRef" LowerBound="174.101" HigherBound="174.105">
+                                            <om:Property Name="MessageRef" Value="x856" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="MessagePartReference_3" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                        <om:Element Type="MessagePartRef" OID="c2ee9365-b76f-428c-8a92-e51ce4a365a8" ParentLink="Transform_OutputMessagePartRef" LowerBound="174.44" HigherBound="174.48">
+                                            <om:Property Name="MessageRef" Value="x997" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="MessagePartReference_4" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="Construct" OID="8ab6fb5a-11f2-47ee-a2c8-8e966f73347b" ParentLink="ComplexStatement_Statement" LowerBound="176.1" HigherBound="182.1">
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Construct_ASN_1" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="MessageRef" OID="71beba91-fd7f-4f1d-aa64-8704c0fce123" ParentLink="Construct_MessageRef" LowerBound="177.39" HigherBound="177.42">
+                                        <om:Property Name="Ref" Value="asn" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                    <om:Element Type="Transform" OID="fd258891-f629-45f1-8897-d10b96d33506" ParentLink="ComplexStatement_Statement" LowerBound="179.1" HigherBound="181.1">
+                                        <om:Property Name="ClassName" Value="Inbound_Status_Doc_X12_Process.Maps.Map_856" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Transform_ASN_1" />
+                                        <om:Property Name="Signal" Value="True" />
+                                        <om:Element Type="MessagePartRef" OID="65ebab07-f39f-4adc-b43d-70fc11098c67" ParentLink="Transform_InputMessagePartRef" LowerBound="180.96" HigherBound="180.100">
+                                            <om:Property Name="MessageRef" Value="x856" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="MessagePartReference_9" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                        <om:Element Type="MessagePartRef" OID="3e465e1e-abb1-47f3-b1f1-89367d7a6a91" ParentLink="Transform_OutputMessagePartRef" LowerBound="180.44" HigherBound="180.47">
+                                            <om:Property Name="MessageRef" Value="asn" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="MessagePartReference_10" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="VariableAssignment" OID="8e63e82b-fc9d-410b-9578-3120e7426de8" ParentLink="ComplexStatement_Statement" LowerBound="182.1" HigherBound="185.1">
+                                    <om:Property Name="Expression" Value="library.Create997(timestamp,x997);&#xD;&#xA;library.CreateStatusDocFromEdi(asn,docType);" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Process_ASN_1" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="DecisionBranch" OID="d9624fdc-ab16-4023-9a54-b3036f661335" ParentLink="ReallyComplexStatement_Branch" LowerBound="186.30" HigherBound="210.1">
+                                <om:Property Name="Expression" Value="docType == &quot;810&quot;" />
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="810" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="Construct" OID="b097e786-e657-4d9d-89bf-8af515e01a49" ParentLink="ComplexStatement_Statement" LowerBound="188.1" HigherBound="194.1">
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Assign810_1" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="MessageRef" OID="1febc3b5-a687-4ea8-ae85-64d28ae12e70" ParentLink="Construct_MessageRef" LowerBound="189.39" HigherBound="189.43">
+                                        <om:Property Name="Ref" Value="x810" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                    <om:Element Type="MessageAssignment" OID="573cf84f-74c6-40f5-bb0a-df1d56fdc175" ParentLink="ComplexStatement_Statement" LowerBound="191.1" HigherBound="193.1">
+                                        <om:Property Name="Expression" Value="x810 = xml;" />
+                                        <om:Property Name="ReportToAnalyst" Value="False" />
+                                        <om:Property Name="Name" Value="MessageAssignment_3" />
+                                        <om:Property Name="Signal" Value="True" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="Construct" OID="993d4061-f86b-4d66-b724-d06f69c2cdb4" ParentLink="ComplexStatement_Statement" LowerBound="194.1" HigherBound="200.1">
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Construct_810_997_3" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="Transform" OID="0181d516-0330-4bfa-9d11-7ee01f5229df" ParentLink="ComplexStatement_Statement" LowerBound="197.1" HigherBound="199.1">
+                                        <om:Property Name="ClassName" Value="Inbound_Status_Doc_X12_Process.Maps.Map_810_997" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Transform_81_997_1" />
+                                        <om:Property Name="Signal" Value="True" />
+                                        <om:Element Type="MessagePartRef" OID="ec9c6f85-207d-4e61-a726-82ead32890bc" ParentLink="Transform_InputMessagePartRef" LowerBound="198.101" HigherBound="198.105">
+                                            <om:Property Name="MessageRef" Value="x810" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="MessagePartReference_5" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                        <om:Element Type="MessagePartRef" OID="1eb53d3b-121d-4b0c-b73e-904253c8aedb" ParentLink="Transform_OutputMessagePartRef" LowerBound="198.44" HigherBound="198.48">
+                                            <om:Property Name="MessageRef" Value="x997" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="MessagePartReference_6" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                    </om:Element>
+                                    <om:Element Type="MessageRef" OID="c4f1bcb9-4663-4184-a83f-ccb204673584" ParentLink="Construct_MessageRef" LowerBound="195.39" HigherBound="195.43">
+                                        <om:Property Name="Ref" Value="x997" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="Construct" OID="04f05146-5a5c-4501-a007-1648201d0f8e" ParentLink="ComplexStatement_Statement" LowerBound="200.1" HigherBound="206.1">
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Construct_Invoice_1" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="MessageRef" OID="37f46d6d-92ee-4c79-bc24-940c4e8420f0" ParentLink="Construct_MessageRef" LowerBound="201.39" HigherBound="201.46">
+                                        <om:Property Name="Ref" Value="invoice" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                    <om:Element Type="Transform" OID="6597eb99-1308-45c5-8356-44a7d5f0f5c8" ParentLink="ComplexStatement_Statement" LowerBound="203.1" HigherBound="205.1">
+                                        <om:Property Name="ClassName" Value="Inbound_Status_Doc_X12_Process.Maps.Map_810" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Transform_Invoice_1" />
+                                        <om:Property Name="Signal" Value="True" />
+                                        <om:Element Type="MessagePartRef" OID="8c64e963-f4db-444e-9431-873292afe60f" ParentLink="Transform_OutputMessagePartRef" LowerBound="204.44" HigherBound="204.51">
+                                            <om:Property Name="MessageRef" Value="invoice" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="MessagePartReference_12" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                        <om:Element Type="MessagePartRef" OID="0bde6e80-994c-4625-8d74-76b4d9b1de39" ParentLink="Transform_InputMessagePartRef" LowerBound="204.100" HigherBound="204.104">
+                                            <om:Property Name="MessageRef" Value="x810" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="MessagePartReference_11" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="VariableAssignment" OID="d0f98e57-452d-4a6b-b035-0d3dd2854eb3" ParentLink="ComplexStatement_Statement" LowerBound="206.1" HigherBound="209.1">
+                                    <om:Property Name="Expression" Value="library.Create997(timestamp,x997);&#xD;&#xA;library.CreateStatusDocFromEdi(invoice,docType);" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Process_Invoice_1" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="DecisionBranch" OID="9f1939c9-f089-406f-9bf9-6750178785cd" ParentLink="ReallyComplexStatement_Branch">
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Else" />
+                                <om:Property Name="Signal" Value="False" />
+                                <om:Element Type="VariableAssignment" OID="a0595937-6e20-4091-8e47-2dff412f04e5" ParentLink="ComplexStatement_Statement" LowerBound="212.1" HigherBound="214.1">
+                                    <om:Property Name="Expression" Value="library.CreateDump(dumpFolders.INBOUND_STATUS_FAILED(),timestamp,&quot;&quot;,xml,true);" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Expression_4" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Catch" OID="461387e1-2468-46b2-b3c0-81297c96b657" ParentLink="Scope_Catch" LowerBound="219.1" HigherBound="231.1">
+                        <om:Property Name="ExceptionName" Value="ex" />
+                        <om:Property Name="ExceptionType" Value="System.SystemException" />
+                        <om:Property Name="IsFaultMessage" Value="False" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="CatchException_1" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="VariableAssignment" OID="772eaa6a-233f-4f76-8f4a-95dd2b032ced" ParentLink="Catch_Statement" LowerBound="222.1" HigherBound="230.1">
+                            <om:Property Name="Expression" Value="library = new BizTalkLibrary.Orchestrations.OrchestrationFunctions();&#xD;&#xA;dumpFolders = new BizTalkLibrary.Classes.Constants.DUMP_FOLDERS();&#xD;&#xA;timestamp=library.GetTimeStamp(System.DateTime.Now);&#xD;&#xA;docType = library.GetEdiDocumentType(xml);&#xD;&#xA;library.CreateDump(dumpFolders.INBOUND_STATUS_FAILED(),docType+&quot;.Arrive&quot;,timestamp,xml,true);&#xD;&#xA;&#xD;&#xA;library.sendExceptionEmail(ex,&quot;Inbound_Status_Doc_cXML_Receive&quot;,&quot;&quot;,&quot;&quot;,docType);" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Expression_3" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="c6194be0-e5ce-44bd-85df-3fd4cf642728" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="18.1" HigherBound="20.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="Inbound_Status_Doc_X12_Process.Inbound_Status_Doc_X12_Process_PortType_1" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Inbound_Status_Doc_X12_Process_Port_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="8e043f0e-3b96-4d39-bdcd-bfbc1f352e17" ParentLink="PortDeclaration_CLRAttribute" LowerBound="18.1" HigherBound="19.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module Inbound_Status_Doc_X12_Process
+{
+    internal porttype Inbound_Status_Doc_X12_Process_PortType_1
+    {
+        oneway Operation_1
+        {
+            System.Xml.XmlDocument
+        };
+    };
+    internal correlationtype CorrelationType_1
+    {
+        BTS.ReceivePortName
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service Inbound_Status_Doc_X12_Process_Orch
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements Inbound_Status_Doc_X12_Process_PortType_1 Inbound_Status_Doc_X12_Process_Port_1;
+        correlation CorrelationType_1 Correlation_1;
+        message System.Xml.XmlDocument xml;
+        message EdiSchemas.X12.X12_00401_997 x997;
+        message EdiSchemas.X12.X12_00401_810 x810;
+        message EdiSchemas.X12.X12_00401_855 x855;
+        message EdiSchemas.X12.X12_00401_856 x856;
+        message EdiSchemas.cXML.Fulfill.cXML_Fulfill orderConfirm;
+        message EdiSchemas.cXML.Fulfill.cXML_Fulfill asn;
+        message EdiSchemas.cXML.cXMLinvoice invoice;
+        BizTalkLibrary.Orchestrations.OrchestrationFunctions library;
+        System.String timestamp;
+        System.String docType;
+        BizTalkLibrary.Classes.Constants.DUMP_FOLDERS dumpFolders;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("dd61eb18-b190-46be-af45-b12bfe42bd9b")]
+            activate receive (Inbound_Status_Doc_X12_Process_Port_1.Operation_1, xml, initialize Correlation_1);
+            library = new BizTalkLibrary.Orchestrations.OrchestrationFunctions();
+            timestamp = "";
+            docType = "";
+            dumpFolders = new BizTalkLibrary.Classes.Constants.DUMP_FOLDERS();
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("f56b1752-254d-40f3-a719-1806dfd04738")]
+            scope
+            {
+                body
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("e20f5949-a76f-40a8-8895-c46757eebfaa")]
+                    timestamp = library.GetTimeStamp(System.DateTime.Now);
+                    docType = library.GetEdiDocumentType(xml);
+                    library.CreateDump(dumpFolders.INBOUND_STATUS_PROCESSED_INCOMING(),docType,timestamp,xml,true);
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("6b911853-0410-4261-bf40-175b2d1763ef")]
+                    if (docType == "855")
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("00c0624f-8ba7-4a6b-b157-6a31d09ccf5b")]
+                        construct x855
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("a27b390d-a98f-47c7-a50a-5bbe6664e89b")]
+                            x855 = xml;
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("259a7ddf-78e9-4641-8ae4-e90c28f07ec3")]
+                        construct x997
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("daae785f-f233-4908-a1a5-0b2301c57e9a")]
+                            transform (x997) = Inbound_Status_Doc_X12_Process.Maps.Map_855_997 (x855);
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("2b837692-5723-46c1-97b1-1ebc5b3facf8")]
+                        construct orderConfirm
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("63b09ac0-eed1-44d7-870c-20655abbd01b")]
+                            transform (orderConfirm) = Inbound_Status_Doc_X12_Process.Maps.Map_855 (x855);
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("dc4640b0-22f7-41df-a027-be359e8a8d2d")]
+                        library.Create997(timestamp,x997);
+                        library.CreateStatusDocFromEdi(orderConfirm,docType);
+                    }
+                    else if (docType == "856")
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("98d9d853-1f7b-4b1b-90a9-5d09a61f723c")]
+                        construct x856
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("a434bd33-a6c8-4be7-b9d7-60780a18e22b")]
+                            x856 = xml;
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("599ce786-11df-48a9-92f2-3f19d10126db")]
+                        construct x997
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("4712c5e7-fc6f-48d1-9123-ad8ea34229d0")]
+                            transform (x997) = Inbound_Status_Doc_X12_Process.Maps.Map_856_997 (x856);
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("527c7040-9e5f-4458-99fd-dde8b2196b10")]
+                        construct asn
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("c6544cec-f4e7-46a6-a60b-19b079c3f4a1")]
+                            transform (asn) = Inbound_Status_Doc_X12_Process.Maps.Map_856 (x856);
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("8485574e-f82c-4548-a8f0-6d5505e73b4e")]
+                        library.Create997(timestamp,x997);
+                        library.CreateStatusDocFromEdi(asn,docType);
+                    }
+                    else if (docType == "810")
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("d8ca4b1c-919f-46f2-8b30-cbc9987246d0")]
+                        construct x810
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("b8e97d56-db4e-463f-8184-5c2f65a79cbb")]
+                            x810 = xml;
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("c5d6564f-41d9-43ae-8506-a6456d6b4b81")]
+                        construct x997
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("b7594eea-b45d-406b-9e92-b23b6e6d4cbb")]
+                            transform (x997) = Inbound_Status_Doc_X12_Process.Maps.Map_810_997 (x810);
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("4d501e4d-594f-43fc-a6e5-66f9c05c69b9")]
+                        construct invoice
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("9dc16c12-d15d-46af-a73c-35142d2970f5")]
+                            transform (invoice) = Inbound_Status_Doc_X12_Process.Maps.Map_810 (x810);
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("c0bda29a-8fc9-457e-b268-255565507f54")]
+                        library.Create997(timestamp,x997);
+                        library.CreateStatusDocFromEdi(invoice,docType);
+                    }
+                    else 
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("fe33a64c-6b04-4688-9b64-690631a65fcb")]
+                        library.CreateDump(dumpFolders.INBOUND_STATUS_FAILED(),timestamp,"",xml,true);
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("9d025611-39b3-4c5e-bd0a-6afcf570de40")]
+                    while (true)
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("111a0ab0-9f42-46a7-9c6e-5eaa365956d8")]
+                        receive (Inbound_Status_Doc_X12_Process_Port_1.Operation_1, xml, Correlation_1);
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("b316e11b-5d27-4b7e-9038-8a7f6db85bb2")]
+                        timestamp = library.GetTimeStamp(System.DateTime.Now);
+                        docType = library.GetEdiDocumentType(xml);
+                        library.CreateDump(dumpFolders.INBOUND_STATUS_PROCESSED_INCOMING(),docType,timestamp,xml,true);
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("9b7ecd03-60ab-41dc-aa45-03bd516ef176")]
+                        if (docType == "855")
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("23421fca-90bf-4864-9058-e2a0da06208a")]
+                            construct x855
+                            {
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("1fc823b1-4460-4eb5-a542-279944461f11")]
+                                x855 = xml;
+                            }
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("26650ade-07cd-470f-803f-6dae97256a26")]
+                            construct x997
+                            {
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("e7317458-60d4-4d87-83fc-937653102fb5")]
+                                transform (x997) = Inbound_Status_Doc_X12_Process.Maps.Map_855_997 (x855);
+                            }
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("3afa7c8d-5c4d-400b-92c7-92d97d84e8c9")]
+                            construct orderConfirm
+                            {
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("36c580c4-569b-45a6-9daa-cee65b0a63b8")]
+                                transform (orderConfirm) = Inbound_Status_Doc_X12_Process.Maps.Map_855 (x855);
+                            }
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("1b7fb9b3-09b7-48f8-8b4b-d1d2ff3b194f")]
+                            library.Create997(timestamp,x997);
+                            library.CreateStatusDocFromEdi(orderConfirm,docType);
+                        }
+                        else if (docType == "856")
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("403b54e1-2d52-468b-9a01-a51fc0cf50d3")]
+                            construct x856
+                            {
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("0c884e82-2b44-47e2-a728-e645e43690ea")]
+                                x856 = xml;
+                            }
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("eda55d34-83ec-48a9-a19a-f83773a72ebf")]
+                            construct x997
+                            {
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("f3717def-da5b-49e1-932c-0df6bd3b54e4")]
+                                transform (x997) = Inbound_Status_Doc_X12_Process.Maps.Map_856_997 (x856);
+                            }
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("8ab6fb5a-11f2-47ee-a2c8-8e966f73347b")]
+                            construct asn
+                            {
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("fd258891-f629-45f1-8897-d10b96d33506")]
+                                transform (asn) = Inbound_Status_Doc_X12_Process.Maps.Map_856 (x856);
+                            }
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("8e63e82b-fc9d-410b-9578-3120e7426de8")]
+                            library.Create997(timestamp,x997);
+                            library.CreateStatusDocFromEdi(asn,docType);
+                        }
+                        else if (docType == "810")
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("b097e786-e657-4d9d-89bf-8af515e01a49")]
+                            construct x810
+                            {
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("573cf84f-74c6-40f5-bb0a-df1d56fdc175")]
+                                x810 = xml;
+                            }
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("993d4061-f86b-4d66-b724-d06f69c2cdb4")]
+                            construct x997
+                            {
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("0181d516-0330-4bfa-9d11-7ee01f5229df")]
+                                transform (x997) = Inbound_Status_Doc_X12_Process.Maps.Map_810_997 (x810);
+                            }
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("04f05146-5a5c-4501-a007-1648201d0f8e")]
+                            construct invoice
+                            {
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("6597eb99-1308-45c5-8356-44a7d5f0f5c8")]
+                                transform (invoice) = Inbound_Status_Doc_X12_Process.Maps.Map_810 (x810);
+                            }
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("d0f98e57-452d-4a6b-b035-0d3dd2854eb3")]
+                            library.Create997(timestamp,x997);
+                            library.CreateStatusDocFromEdi(invoice,docType);
+                        }
+                        else 
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("a0595937-6e20-4091-8e47-2dff412f04e5")]
+                            library.CreateDump(dumpFolders.INBOUND_STATUS_FAILED(),timestamp,"",xml,true);
+                        }
+                    }
+                }
+                exceptions
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("461387e1-2468-46b2-b3c0-81297c96b657")]
+                    catch (System.SystemException ex)
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("772eaa6a-233f-4f76-8f4a-95dd2b032ced")]
+                        library = new BizTalkLibrary.Orchestrations.OrchestrationFunctions();
+                        dumpFolders = new BizTalkLibrary.Classes.Constants.DUMP_FOLDERS();
+                        timestamp=library.GetTimeStamp(System.DateTime.Now);
+                        docType = library.GetEdiDocumentType(xml);
+                        library.CreateDump(dumpFolders.INBOUND_STATUS_FAILED(),docType+".Arrive",timestamp,xml,true);
+                        
+                        library.sendExceptionEmail(ex,"Inbound_Status_Doc_cXML_Receive","","",docType);
+                    }
+                }
+            }
+        }
+    }
+}
+

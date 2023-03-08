@@ -1,0 +1,16 @@
+R:\Source\GSS_Biztalk\Bypass_PO_Pickup\bin\Debug\Bypass_PO_Pickup.dll
+R:\Source\GSS_Biztalk\Bypass_PO_Pickup\bin\Debug\Bypass_PO_Pickup.pdb
+R:\Source\GSS_Biztalk\Bypass_PO_Pickup\bin\Debug\BizTalkLibrary.dll
+R:\Source\GSS_Biztalk\Bypass_PO_Pickup\bin\Debug\CxmlSchemas.dll
+R:\Source\GSS_Biztalk\Bypass_PO_Pickup\obj\Debug\OUTBOUND_PO_CXML_BYPASS_PICKUP.btproj.CoreCompileInputs.cache
+R:\Source\GSS_Biztalk\Bypass_PO_Pickup\obj\Debug\OUTBOUND_PO_CXML_BYPASS_PICKUP.btproj.CopyComplete
+R:\Source\GSS_Biztalk\Bypass_PO_Pickup\obj\Debug\Bypass_PO_Pickup.dll
+R:\Source\GSS_Biztalk\Bypass_PO_Pickup\obj\Debug\Bypass_PO_Pickup.pdb
+R:\Source\GSS_Biztalk\OUTBOUND_PO_CXML_BYPASS_PICKUP\bin\Debug\Outbound_PO_cXML_Bypass_Pickup.dll
+R:\Source\GSS_Biztalk\OUTBOUND_PO_CXML_BYPASS_PICKUP\bin\Debug\Outbound_PO_cXML_Bypass_Pickup.pdb
+R:\Source\GSS_Biztalk\OUTBOUND_PO_CXML_BYPASS_PICKUP\bin\Debug\BizTalkLibrary.dll
+R:\Source\GSS_Biztalk\OUTBOUND_PO_CXML_BYPASS_PICKUP\obj\Debug\OUTBOUND_PO_CXML_BYPASS_PICKUP.btproj.CoreCompileInputs.cache
+R:\Source\GSS_Biztalk\OUTBOUND_PO_CXML_BYPASS_PICKUP\obj\Debug\OUTBOUND_PO_CXML_BYPASS_PICKUP.btproj.CopyComplete
+R:\Source\GSS_Biztalk\OUTBOUND_PO_CXML_BYPASS_PICKUP\obj\Debug\Outbound_PO_cXML_Bypass_Pickup.dll
+R:\Source\GSS_Biztalk\OUTBOUND_PO_CXML_BYPASS_PICKUP\obj\Debug\Outbound_PO_cXML_Bypass_Pickup.pdb
+R:\Source\GSS_Biztalk\Outbound_PO_cXML_Bypass_Pickup\bin\Debug\EdiSchemas.dll

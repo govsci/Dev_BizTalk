@@ -1,0 +1,9 @@
+R:\Source\GSS_Biztalk\HttpPoReceive\bin\Debug\HttpPoReceive.dll
+R:\Source\GSS_Biztalk\HttpPoReceive\bin\Debug\HttpPoReceive.pdb
+R:\Source\GSS_Biztalk\HttpPoReceive\bin\Debug\BizTalkLibrary.dll
+R:\Source\GSS_Biztalk\HttpPoReceive\obj\Debug\HttpPoReceive.btproj.AssemblyReference.cache
+R:\Source\GSS_Biztalk\HttpPoReceive\obj\Debug\HttpPoReceive.btproj.CoreCompileInputs.cache
+R:\Source\GSS_Biztalk\HttpPoReceive\obj\Debug\HttpPoReceive.btproj.CopyComplete
+R:\Source\GSS_Biztalk\HttpPoReceive\obj\Debug\HttpPoReceive.dll
+R:\Source\GSS_Biztalk\HttpPoReceive\obj\Debug\HttpPoReceive.pdb
+R:\Source\GSS_Biztalk\HttpPoReceive\bin\Debug\CxmlSchemas.dll

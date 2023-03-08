@@ -1,0 +1,6 @@
+R:\Source\GSS_Biztalk\Pipelines_EDI\bin\Debug\Pipelines_EDI.dll
+R:\Source\GSS_Biztalk\Pipelines_EDI\bin\Debug\Pipelines_EDI.pdb
+R:\Source\GSS_Biztalk\Pipelines_EDI\obj\Debug\Pipelines_EDI.btproj.AssemblyReference.cache
+R:\Source\GSS_Biztalk\Pipelines_EDI\obj\Debug\Pipelines_EDI.btproj.CoreCompileInputs.cache
+R:\Source\GSS_Biztalk\Pipelines_EDI\obj\Debug\Pipelines_EDI.dll
+R:\Source\GSS_Biztalk\Pipelines_EDI\obj\Debug\Pipelines_EDI.pdb

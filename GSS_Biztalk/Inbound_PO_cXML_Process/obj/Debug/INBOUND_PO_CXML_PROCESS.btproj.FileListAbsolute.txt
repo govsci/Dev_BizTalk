@@ -1,0 +1,16 @@
+R:\Source\GSS_Biztalk\Process_Incoming_PO\bin\Debug\BizTalkLibrary.dll
+R:\Source\GSS_Biztalk\Process_Incoming_PO\bin\Debug\CxmlSchemas.dll
+R:\Source\GSS_Biztalk\Process_Incoming_PO\obj\Debug\INBOUND_PO_CXML_PROCESS.btproj.CoreCompileInputs.cache
+R:\Source\GSS_Biztalk\Process_Incoming_PO\obj\Debug\INBOUND_PO_CXML_PROCESS.btproj.CopyComplete
+R:\Source\GSS_Biztalk\Process_Incoming_PO\bin\Debug\INBOUND_PO_CXML_PROCESS.dll
+R:\Source\GSS_Biztalk\Process_Incoming_PO\bin\Debug\INBOUND_PO_CXML_PROCESS.pdb
+R:\Source\GSS_Biztalk\Process_Incoming_PO\obj\Debug\INBOUND_PO_CXML_PROCESS.dll
+R:\Source\GSS_Biztalk\Process_Incoming_PO\obj\Debug\INBOUND_PO_CXML_PROCESS.pdb
+R:\Source\GSS_Biztalk\INBOUND_PO_CXML_PROCESS\bin\Debug\INBOUND_PO_CXML_PROCESS.dll
+R:\Source\GSS_Biztalk\INBOUND_PO_CXML_PROCESS\bin\Debug\INBOUND_PO_CXML_PROCESS.pdb
+R:\Source\GSS_Biztalk\INBOUND_PO_CXML_PROCESS\bin\Debug\BizTalkLibrary.dll
+R:\Source\GSS_Biztalk\INBOUND_PO_CXML_PROCESS\obj\Debug\INBOUND_PO_CXML_PROCESS.btproj.CoreCompileInputs.cache
+R:\Source\GSS_Biztalk\INBOUND_PO_CXML_PROCESS\obj\Debug\INBOUND_PO_CXML_PROCESS.btproj.CopyComplete
+R:\Source\GSS_Biztalk\INBOUND_PO_CXML_PROCESS\obj\Debug\INBOUND_PO_CXML_PROCESS.dll
+R:\Source\GSS_Biztalk\INBOUND_PO_CXML_PROCESS\obj\Debug\INBOUND_PO_CXML_PROCESS.pdb
+R:\Source\GSS_Biztalk\Inbound_PO_cXML_Process\bin\Debug\EdiSchemas.dll

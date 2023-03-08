@@ -1,0 +1,9 @@
+R:\Source\GSS_Biztalk\HttpStatusDocReceive\bin\Debug\HttpStatusDocReceive.dll
+R:\Source\GSS_Biztalk\HttpStatusDocReceive\bin\Debug\HttpStatusDocReceive.pdb
+R:\Source\GSS_Biztalk\HttpStatusDocReceive\bin\Debug\BizTalkLibrary.dll
+R:\Source\GSS_Biztalk\HttpStatusDocReceive\bin\Debug\CxmlSchemas.dll
+R:\Source\GSS_Biztalk\HttpStatusDocReceive\obj\Debug\HttpStatusDocReceive.btproj.AssemblyReference.cache
+R:\Source\GSS_Biztalk\HttpStatusDocReceive\obj\Debug\HttpStatusDocReceive.btproj.CoreCompileInputs.cache
+R:\Source\GSS_Biztalk\HttpStatusDocReceive\obj\Debug\HttpStatusDocReceive.btproj.CopyComplete
+R:\Source\GSS_Biztalk\HttpStatusDocReceive\obj\Debug\HttpStatusDocReceive.dll
+R:\Source\GSS_Biztalk\HttpStatusDocReceive\obj\Debug\HttpStatusDocReceive.pdb

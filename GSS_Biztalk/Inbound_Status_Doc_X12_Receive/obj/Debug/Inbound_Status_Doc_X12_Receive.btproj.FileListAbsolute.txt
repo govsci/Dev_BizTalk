@@ -1,0 +1,9 @@
+R:\Source\GSS_Biztalk\Inbound_Status_Doc_X12_Receive\bin\Debug\Inbound_Status_Doc_X12_Receive.dll
+R:\Source\GSS_Biztalk\Inbound_Status_Doc_X12_Receive\bin\Debug\Inbound_Status_Doc_X12_Receive.pdb
+R:\Source\GSS_Biztalk\Inbound_Status_Doc_X12_Receive\bin\Debug\BizTalkLibrary.dll
+R:\Source\GSS_Biztalk\Inbound_Status_Doc_X12_Receive\obj\Debug\Inbound_Status_Doc_X12_Receive.btproj.AssemblyReference.cache
+R:\Source\GSS_Biztalk\Inbound_Status_Doc_X12_Receive\obj\Debug\Inbound_Status_Doc_X12_Receive.btproj.CoreCompileInputs.cache
+R:\Source\GSS_Biztalk\Inbound_Status_Doc_X12_Receive\obj\Debug\Inbound_Status_Doc_X12_Receive.btproj.CopyComplete
+R:\Source\GSS_Biztalk\Inbound_Status_Doc_X12_Receive\obj\Debug\Inbound_Status_Doc_X12_Receive.dll
+R:\Source\GSS_Biztalk\Inbound_Status_Doc_X12_Receive\obj\Debug\Inbound_Status_Doc_X12_Receive.pdb
+R:\Source\GSS_Biztalk\Inbound_Status_Doc_X12_Receive\bin\Debug\EdiSchemas.dll

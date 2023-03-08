@@ -1,0 +1,270 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="713e4728-c1c7-47d1-a928-14b0b9c23d89" LowerBound="1.1" HigherBound="74.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="Outbound_PO_cXML_Bypass_Pickup" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="b53d7e60-47ed-45d6-a343-b755e94e1f53" ParentLink="Module_PortType" LowerBound="4.1" HigherBound="11.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="Outbound_PO_cXML_Bypass_Pickup_PortType_1" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="OperationDeclaration" OID="1e0cd62a-f09a-4ff3-bd0e-afa0aab7d383" ParentLink="PortType_OperationDeclaration" LowerBound="6.1" HigherBound="10.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="cfaa7c2c-c255-4284-9828-41556f2dbbe6" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="8.13" HigherBound="8.35">
+                    <om:Property Name="Ref" Value="System.Xml.XmlDocument" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="CorrelationType" OID="6ab2aebc-30a0-4be6-a9f8-8b643f6f1895" ParentLink="Module_CorrelationType" LowerBound="11.1" HigherBound="15.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="CorrelationType_1" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PropertyRef" OID="821637e2-5a39-4fd5-9313-25205af46bec" ParentLink="CorrelationType_PropertyRef" LowerBound="13.9" HigherBound="13.28">
+                <om:Property Name="Ref" Value="BTS.ReceivePortName" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="PropertyRef_1" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="be025129-774b-469d-8f81-8aa3b1e9bf91" ParentLink="Module_ServiceDeclaration" LowerBound="15.1" HigherBound="73.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="Outbound_PO_cXML_Bypass_Pickup_Orch" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="VariableDeclaration" OID="33175b3c-0d30-449b-a727-f82388490d9a" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="22.1" HigherBound="23.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="BizTalkLibrary.Orchestrations.OrchestrationFunctions" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="library" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="bffa4fb1-4211-4501-98a2-f0d6a3683e0d" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="23.1" HigherBound="24.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="timestamp" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="25e30c26-ca93-400c-b533-c93bee0bc221" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="24.1" HigherBound="25.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="orderid" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="a83a2b14-4b94-4b07-8f0c-5aa1d248c317" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="25.1" HigherBound="26.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="BizTalkLibrary.Classes.Constants.CXML_PO_TYPE" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="poType" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="b32d84c2-d0e1-404c-99f6-38d3d5d4942c" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="26.1" HigherBound="27.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="BizTalkLibrary.Classes.Constants.DUMP_FOLDERS" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="dumpFolder" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="CorrelationDeclaration" OID="3a288eae-e75b-4bc9-9aac-59351aa05f67" ParentLink="ServiceDeclaration_CorrelationDeclaration" LowerBound="20.1" HigherBound="21.1">
+                <om:Property Name="Type" Value="Outbound_PO_cXML_Bypass_Pickup.CorrelationType_1" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Correlation_1" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="StatementRef" OID="edbd5014-06fd-42b2-a877-5b3cb13b1f76" ParentLink="CorrelationDeclaration_StatementRef" LowerBound="30.88" HigherBound="30.112">
+                    <om:Property Name="Initializes" Value="True" />
+                    <om:Property Name="Ref" Value="24b02429-13f1-4349-998b-94fac4f0a280" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="StatementRef_1" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="StatementRef" OID="5a8d0e95-1222-4681-a500-663b323f8157" ParentLink="CorrelationDeclaration_StatementRef" LowerBound="48.91" HigherBound="48.104">
+                    <om:Property Name="Initializes" Value="False" />
+                    <om:Property Name="Ref" Value="c171590f-b06b-456a-a4c4-ad50d895f427" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="StatementRef_2" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="f8ffc135-16b2-45e0-8210-925c620cecdf" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="21.1" HigherBound="22.1">
+                <om:Property Name="Type" Value="System.Xml.XmlDocument" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="cXML" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="9f939c1d-ed9d-434a-930d-f5af98d73c40" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="24b02429-13f1-4349-998b-94fac4f0a280" ParentLink="ServiceBody_Statement" LowerBound="29.1" HigherBound="36.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="Outbound_PO_cXML_Bypass_Pickup_Port_1" />
+                    <om:Property Name="MessageName" Value="cXML" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Receive_1" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Scope" OID="1fc9a0fe-0c0c-40c5-bb2a-ec506f4e9def" ParentLink="ServiceBody_Statement" LowerBound="36.1" HigherBound="71.1">
+                    <om:Property Name="InitializedTransactionType" Value="True" />
+                    <om:Property Name="IsSynchronized" Value="False" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Scope_1" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="VariableAssignment" OID="4389d977-43fe-4008-827f-e60a92eb20c5" ParentLink="ComplexStatement_Statement" LowerBound="41.1" HigherBound="44.1">
+                        <om:Property Name="Expression" Value="timestamp = library.GetTimeStamp(System.DateTime.Now);&#xD;&#xA;library.ProcessCxmlPo(cXML,timestamp,poType.ReturnBypass());" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Process_1" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="While" OID="9e959a64-233a-4084-9cab-86c8e5f9463b" ParentLink="ComplexStatement_Statement" LowerBound="44.1" HigherBound="53.1">
+                        <om:Property Name="Expression" Value="true" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Loop_1" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Receive" OID="c171590f-b06b-456a-a4c4-ad50d895f427" ParentLink="ComplexStatement_Statement" LowerBound="47.1" HigherBound="49.1">
+                            <om:Property Name="Activate" Value="False" />
+                            <om:Property Name="PortName" Value="Outbound_PO_cXML_Bypass_Pickup_Port_1" />
+                            <om:Property Name="MessageName" Value="cXML" />
+                            <om:Property Name="OperationName" Value="Operation_1" />
+                            <om:Property Name="OperationMessageName" Value="Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Receive_2" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="VariableAssignment" OID="fc8a961a-05d8-4ba1-bde3-47faf220a3c0" ParentLink="ComplexStatement_Statement" LowerBound="49.1" HigherBound="52.1">
+                            <om:Property Name="Expression" Value="timestamp = library.GetTimeStamp(System.DateTime.Now);&#xD;&#xA;library.ProcessCxmlPo(cXML,timestamp,poType.ReturnBypass());" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Process_2" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Catch" OID="83092eb3-969b-4e49-9584-3018693c7768" ParentLink="Scope_Catch" LowerBound="56.1" HigherBound="69.1">
+                        <om:Property Name="ExceptionName" Value="ex" />
+                        <om:Property Name="ExceptionType" Value="System.Exception" />
+                        <om:Property Name="IsFaultMessage" Value="False" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="CatchException_1" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="VariableAssignment" OID="07c1f740-02ea-4c7e-badf-d9b3f8018967" ParentLink="Catch_Statement" LowerBound="59.1" HigherBound="68.1">
+                            <om:Property Name="Expression" Value="library = new BizTalkLibrary.Orchestrations.OrchestrationFunctions();&#xD;&#xA;dumpFolder = new BizTalkLibrary.Classes.Constants.DUMP_FOLDERS();&#xD;&#xA;&#xD;&#xA;timestamp=library.GetTimeStamp(System.DateTime.Now);&#xD;&#xA;orderid=library.GetOrderId(cXML);&#xD;&#xA;library.CreateDump(dumpFolder.OUTBOUND_PO_FAILED(),orderid+&quot;.cXML_Bypass_Pickup&quot;,timestamp,cXML,true);&#xD;&#xA;&#xD;&#xA;library.sendExceptionEmail(ex,&quot;Outbound_PO_cXML_Bypass_Pickup&quot;,&quot;&quot;,&quot;&quot;,orderid);" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="CatchExpression_1" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="36c38281-d2ca-4611-9f0f-5bd59feb2223" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="18.1" HigherBound="20.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="Outbound_PO_cXML_Bypass_Pickup.Outbound_PO_cXML_Bypass_Pickup_PortType_1" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Outbound_PO_cXML_Bypass_Pickup_Port_1" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="LogicalBindingAttribute" OID="1212ef28-dee7-4dd6-9396-8344757444b3" ParentLink="PortDeclaration_CLRAttribute" LowerBound="18.1" HigherBound="19.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module Outbound_PO_cXML_Bypass_Pickup
+{
+    internal porttype Outbound_PO_cXML_Bypass_Pickup_PortType_1
+    {
+        oneway Operation_1
+        {
+            System.Xml.XmlDocument
+        };
+    };
+    internal correlationtype CorrelationType_1
+    {
+        BTS.ReceivePortName
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service Outbound_PO_cXML_Bypass_Pickup_Orch
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements Outbound_PO_cXML_Bypass_Pickup_PortType_1 Outbound_PO_cXML_Bypass_Pickup_Port_1;
+        correlation CorrelationType_1 Correlation_1;
+        message System.Xml.XmlDocument cXML;
+        BizTalkLibrary.Orchestrations.OrchestrationFunctions library;
+        System.String timestamp;
+        System.String orderid;
+        BizTalkLibrary.Classes.Constants.CXML_PO_TYPE poType;
+        BizTalkLibrary.Classes.Constants.DUMP_FOLDERS dumpFolder;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("24b02429-13f1-4349-998b-94fac4f0a280")]
+            activate receive (Outbound_PO_cXML_Bypass_Pickup_Port_1.Operation_1, cXML, initialize Correlation_1);
+            library = new BizTalkLibrary.Orchestrations.OrchestrationFunctions();
+            timestamp = "";
+            orderid = "";
+            poType = new BizTalkLibrary.Classes.Constants.CXML_PO_TYPE();
+            dumpFolder = new BizTalkLibrary.Classes.Constants.DUMP_FOLDERS();
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("1fc9a0fe-0c0c-40c5-bb2a-ec506f4e9def")]
+            scope
+            {
+                body
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("4389d977-43fe-4008-827f-e60a92eb20c5")]
+                    timestamp = library.GetTimeStamp(System.DateTime.Now);
+                    library.ProcessCxmlPo(cXML,timestamp,poType.ReturnBypass());
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("9e959a64-233a-4084-9cab-86c8e5f9463b")]
+                    while (true)
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("c171590f-b06b-456a-a4c4-ad50d895f427")]
+                        receive (Outbound_PO_cXML_Bypass_Pickup_Port_1.Operation_1, cXML, Correlation_1);
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("fc8a961a-05d8-4ba1-bde3-47faf220a3c0")]
+                        timestamp = library.GetTimeStamp(System.DateTime.Now);
+                        library.ProcessCxmlPo(cXML,timestamp,poType.ReturnBypass());
+                    }
+                }
+                exceptions
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("83092eb3-969b-4e49-9584-3018693c7768")]
+                    catch (System.Exception ex)
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("07c1f740-02ea-4c7e-badf-d9b3f8018967")]
+                        library = new BizTalkLibrary.Orchestrations.OrchestrationFunctions();
+                        dumpFolder = new BizTalkLibrary.Classes.Constants.DUMP_FOLDERS();
+                        
+                        timestamp=library.GetTimeStamp(System.DateTime.Now);
+                        orderid=library.GetOrderId(cXML);
+                        library.CreateDump(dumpFolder.OUTBOUND_PO_FAILED(),orderid+".cXML_Bypass_Pickup",timestamp,cXML,true);
+                        
+                        library.sendExceptionEmail(ex,"Outbound_PO_cXML_Bypass_Pickup","","",orderid);
+                    }
+                }
+            }
+        }
+    }
+}
+

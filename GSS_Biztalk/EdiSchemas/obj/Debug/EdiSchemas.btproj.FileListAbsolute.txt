@@ -1,0 +1,6 @@
+R:\Source\GSS_Biztalk\EdiSchemas\bin\Debug\EdiSchemas.dll
+R:\Source\GSS_Biztalk\EdiSchemas\bin\Debug\EdiSchemas.pdb
+R:\Source\GSS_Biztalk\EdiSchemas\obj\Debug\EdiSchemas.btproj.CoreCompileInputs.cache
+R:\Source\GSS_Biztalk\EdiSchemas\obj\Debug\EdiSchemas.dll
+R:\Source\GSS_Biztalk\EdiSchemas\obj\Debug\EdiSchemas.pdb
+R:\Source\GSS_Biztalk\EdiSchemas\obj\Debug\EdiSchemas.btproj.AssemblyReference.cache

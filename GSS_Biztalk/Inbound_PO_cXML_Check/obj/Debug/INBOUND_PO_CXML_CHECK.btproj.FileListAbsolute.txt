@@ -1,0 +1,16 @@
+R:\Source\GSS_Biztalk\Check_Incoming_PO\bin\Debug\BizTalkLibrary.dll
+R:\Source\GSS_Biztalk\Check_Incoming_PO\bin\Debug\CxmlSchemas.dll
+R:\Source\GSS_Biztalk\Check_Incoming_PO\obj\Debug\INBOUND_PO_CXML_CHECK.btproj.CoreCompileInputs.cache
+R:\Source\GSS_Biztalk\Check_Incoming_PO\obj\Debug\INBOUND_PO_CXML_CHECK.btproj.CopyComplete
+R:\Source\GSS_Biztalk\Check_Incoming_PO\bin\Debug\INBOUND_PO_CXML_CHECK.dll
+R:\Source\GSS_Biztalk\Check_Incoming_PO\bin\Debug\INBOUND_PO_CXML_CHECK.pdb
+R:\Source\GSS_Biztalk\Check_Incoming_PO\obj\Debug\INBOUND_PO_CXML_CHECK.dll
+R:\Source\GSS_Biztalk\Check_Incoming_PO\obj\Debug\INBOUND_PO_CXML_CHECK.pdb
+R:\Source\GSS_Biztalk\INBOUND_PO_CXML_CHECK\bin\Debug\INBOUND_PO_CXML_CHECK.dll
+R:\Source\GSS_Biztalk\INBOUND_PO_CXML_CHECK\bin\Debug\INBOUND_PO_CXML_CHECK.pdb
+R:\Source\GSS_Biztalk\INBOUND_PO_CXML_CHECK\bin\Debug\BizTalkLibrary.dll
+R:\Source\GSS_Biztalk\INBOUND_PO_CXML_CHECK\obj\Debug\INBOUND_PO_CXML_CHECK.btproj.CoreCompileInputs.cache
+R:\Source\GSS_Biztalk\INBOUND_PO_CXML_CHECK\obj\Debug\INBOUND_PO_CXML_CHECK.btproj.CopyComplete
+R:\Source\GSS_Biztalk\INBOUND_PO_CXML_CHECK\obj\Debug\INBOUND_PO_CXML_CHECK.dll
+R:\Source\GSS_Biztalk\INBOUND_PO_CXML_CHECK\obj\Debug\INBOUND_PO_CXML_CHECK.pdb
+R:\Source\GSS_Biztalk\Inbound_PO_cXML_Check\bin\Debug\EdiSchemas.dll

@@ -1,0 +1,14 @@
+R:\Source\GSS_Biztalk\BizTalkLibrary\bin\Debug\BizTalkLibrary.dll.config
+R:\Source\GSS_Biztalk\BizTalkLibrary\bin\Debug\BizTalkLibrary.dll
+R:\Source\GSS_Biztalk\BizTalkLibrary\bin\Debug\BizTalkLibrary.pdb
+R:\Source\GSS_Biztalk\BizTalkLibrary\obj\Debug\BizTalkLibrary.csproj.CoreCompileInputs.cache
+R:\Source\GSS_Biztalk\BizTalkLibrary\obj\Debug\BizTalkLibrary.dll
+R:\Source\GSS_Biztalk\BizTalkLibrary\obj\Debug\BizTalkLibrary.pdb
+R:\Source\GSS_Biztalk\BizTalkLibrary\obj\Debug\BizTalkLibrary.csproj.AssemblyReference.cache
+R:\Dev_BizTalk\GSS_Biztalk\BizTalkLibrary\bin\Debug\BizTalkLibrary.dll.config
+R:\Dev_BizTalk\GSS_Biztalk\BizTalkLibrary\bin\Debug\BizTalkLibrary.dll
+R:\Dev_BizTalk\GSS_Biztalk\BizTalkLibrary\bin\Debug\BizTalkLibrary.pdb
+R:\Dev_BizTalk\GSS_Biztalk\BizTalkLibrary\obj\Debug\BizTalkLibrary.csproj.AssemblyReference.cache
+R:\Dev_BizTalk\GSS_Biztalk\BizTalkLibrary\obj\Debug\BizTalkLibrary.csproj.CoreCompileInputs.cache
+R:\Dev_BizTalk\GSS_Biztalk\BizTalkLibrary\obj\Debug\BizTalkLibrary.dll
+R:\Dev_BizTalk\GSS_Biztalk\BizTalkLibrary\obj\Debug\BizTalkLibrary.pdb

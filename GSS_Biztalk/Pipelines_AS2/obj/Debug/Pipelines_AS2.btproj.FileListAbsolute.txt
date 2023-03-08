@@ -1,0 +1,6 @@
+R:\Source\GSS_Biztalk\Pipelines_AS2\bin\Debug\Pipelines_AS2.dll
+R:\Source\GSS_Biztalk\Pipelines_AS2\bin\Debug\Pipelines_AS2.pdb
+R:\Source\GSS_Biztalk\Pipelines_AS2\obj\Debug\Pipelines_AS2.btproj.AssemblyReference.cache
+R:\Source\GSS_Biztalk\Pipelines_AS2\obj\Debug\Pipelines_AS2.btproj.CoreCompileInputs.cache
+R:\Source\GSS_Biztalk\Pipelines_AS2\obj\Debug\Pipelines_AS2.dll
+R:\Source\GSS_Biztalk\Pipelines_AS2\obj\Debug\Pipelines_AS2.pdb

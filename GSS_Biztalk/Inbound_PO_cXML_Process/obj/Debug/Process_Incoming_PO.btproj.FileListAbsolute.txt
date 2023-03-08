@@ -1,0 +1,9 @@
+R:\Source\GSS_Biztalk\Process_Incoming_PO\obj\Debug\Process_Incoming_PO.btproj.AssemblyReference.cache
+R:\Source\GSS_Biztalk\Process_Incoming_PO\obj\Debug\Process_Incoming_PO.btproj.CoreCompileInputs.cache
+R:\Source\GSS_Biztalk\Process_Incoming_PO\bin\Debug\Process_Incoming_PO.dll
+R:\Source\GSS_Biztalk\Process_Incoming_PO\bin\Debug\Process_Incoming_PO.pdb
+R:\Source\GSS_Biztalk\Process_Incoming_PO\bin\Debug\BizTalkLibrary.dll
+R:\Source\GSS_Biztalk\Process_Incoming_PO\bin\Debug\CxmlSchemas.dll
+R:\Source\GSS_Biztalk\Process_Incoming_PO\obj\Debug\Process_Incoming_PO.btproj.CopyComplete
+R:\Source\GSS_Biztalk\Process_Incoming_PO\obj\Debug\Process_Incoming_PO.dll
+R:\Source\GSS_Biztalk\Process_Incoming_PO\obj\Debug\Process_Incoming_PO.pdb

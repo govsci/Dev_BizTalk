@@ -1,0 +1,9 @@
+R:\Source\GSS_Biztalk\Process_Incoming_Status_Docs\bin\Debug\Process_Incoming_Status_Docs.dll
+R:\Source\GSS_Biztalk\Process_Incoming_Status_Docs\bin\Debug\Process_Incoming_Status_Docs.pdb
+R:\Source\GSS_Biztalk\Process_Incoming_Status_Docs\bin\Debug\BizTalkLibrary.dll
+R:\Source\GSS_Biztalk\Process_Incoming_Status_Docs\bin\Debug\CxmlSchemas.dll
+R:\Source\GSS_Biztalk\Process_Incoming_Status_Docs\obj\Debug\Process_Incoming_Status_Docs.btproj.AssemblyReference.cache
+R:\Source\GSS_Biztalk\Process_Incoming_Status_Docs\obj\Debug\Process_Incoming_Status_Docs.btproj.CoreCompileInputs.cache
+R:\Source\GSS_Biztalk\Process_Incoming_Status_Docs\obj\Debug\Process_Incoming_Status_Docs.btproj.CopyComplete
+R:\Source\GSS_Biztalk\Process_Incoming_Status_Docs\obj\Debug\Process_Incoming_Status_Docs.dll
+R:\Source\GSS_Biztalk\Process_Incoming_Status_Docs\obj\Debug\Process_Incoming_Status_Docs.pdb

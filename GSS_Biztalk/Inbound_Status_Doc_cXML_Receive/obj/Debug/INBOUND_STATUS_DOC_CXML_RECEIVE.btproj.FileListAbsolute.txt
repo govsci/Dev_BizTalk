@@ -1,0 +1,16 @@
+R:\Source\GSS_Biztalk\HttpStatusDocReceive\bin\Debug\HttpStatusDocReceive.dll
+R:\Source\GSS_Biztalk\HttpStatusDocReceive\bin\Debug\HttpStatusDocReceive.pdb
+R:\Source\GSS_Biztalk\HttpStatusDocReceive\bin\Debug\BizTalkLibrary.dll
+R:\Source\GSS_Biztalk\HttpStatusDocReceive\bin\Debug\CxmlSchemas.dll
+R:\Source\GSS_Biztalk\HttpStatusDocReceive\obj\Debug\INBOUND_STATUS_DOC_CXML_RECEIVE.btproj.CoreCompileInputs.cache
+R:\Source\GSS_Biztalk\HttpStatusDocReceive\obj\Debug\INBOUND_STATUS_DOC_CXML_RECEIVE.btproj.CopyComplete
+R:\Source\GSS_Biztalk\HttpStatusDocReceive\obj\Debug\HttpStatusDocReceive.dll
+R:\Source\GSS_Biztalk\HttpStatusDocReceive\obj\Debug\HttpStatusDocReceive.pdb
+R:\Source\GSS_Biztalk\INBOUND_STATUS_DOC_CXML_RECEIVE\bin\Debug\Inbound_Status_Doc_cXML_Receive.dll
+R:\Source\GSS_Biztalk\INBOUND_STATUS_DOC_CXML_RECEIVE\bin\Debug\Inbound_Status_Doc_cXML_Receive.pdb
+R:\Source\GSS_Biztalk\INBOUND_STATUS_DOC_CXML_RECEIVE\bin\Debug\BizTalkLibrary.dll
+R:\Source\GSS_Biztalk\INBOUND_STATUS_DOC_CXML_RECEIVE\obj\Debug\INBOUND_STATUS_DOC_CXML_RECEIVE.btproj.CoreCompileInputs.cache
+R:\Source\GSS_Biztalk\INBOUND_STATUS_DOC_CXML_RECEIVE\obj\Debug\INBOUND_STATUS_DOC_CXML_RECEIVE.btproj.CopyComplete
+R:\Source\GSS_Biztalk\INBOUND_STATUS_DOC_CXML_RECEIVE\obj\Debug\Inbound_Status_Doc_cXML_Receive.dll
+R:\Source\GSS_Biztalk\INBOUND_STATUS_DOC_CXML_RECEIVE\obj\Debug\Inbound_Status_Doc_cXML_Receive.pdb
+R:\Source\GSS_Biztalk\Inbound_Status_Doc_cXML_Receive\bin\Debug\EdiSchemas.dll

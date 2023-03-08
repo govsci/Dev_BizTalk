@@ -1,0 +1,8 @@
+R:\Source\GSS_Biztalk\Check_Incoming_PO\bin\Debug\Check_Incoming_PO.dll
+R:\Source\GSS_Biztalk\Check_Incoming_PO\bin\Debug\Check_Incoming_PO.pdb
+R:\Source\GSS_Biztalk\Check_Incoming_PO\bin\Debug\BizTalkLibrary.dll
+R:\Source\GSS_Biztalk\Check_Incoming_PO\bin\Debug\CxmlSchemas.dll
+R:\Source\GSS_Biztalk\Check_Incoming_PO\obj\Debug\INBOUND_PO_CXML_PO_CHECK.btproj.CoreCompileInputs.cache
+R:\Source\GSS_Biztalk\Check_Incoming_PO\obj\Debug\INBOUND_PO_CXML_PO_CHECK.btproj.CopyComplete
+R:\Source\GSS_Biztalk\Check_Incoming_PO\obj\Debug\Check_Incoming_PO.dll
+R:\Source\GSS_Biztalk\Check_Incoming_PO\obj\Debug\Check_Incoming_PO.pdb

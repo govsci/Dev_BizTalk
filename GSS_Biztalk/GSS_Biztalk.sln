@@ -1,0 +1,207 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32602.291
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8727FEA9-91DB-4FB1-952D-E73D021F4F57}") = "GSS_Biztalk", "GSS_Biztalk.btaproj", "{E5DF6FB1-CE5F-4DC3-85B6-562807B05321}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inbound_PO_cXML_Receive", "Inbound_PO_cXML_Receive\Inbound_PO_cXML_Receive.btproj", "{D0EE23CD-18CC-4496-BD51-3C20289DD6EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BizTalkLibrary", "BizTalkLibrary\BizTalkLibrary.csproj", "{DA86414D-E34C-4287-A7C1-1EC1D6ED618D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inbound_Status_Doc_cXML_Receive", "Inbound_Status_Doc_cXML_Receive\Inbound_Status_Doc_cXML_Receive.btproj", "{D6EE85D1-032C-49B1-A62B-58F0D11C100D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inbound_PO_cXML_Check", "Inbound_PO_cXML_Check\Inbound_PO_cXML_Check.btproj", "{B69EF752-C9B9-479E-BEFA-42451936FCBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inbound_PO_cXML_Process", "Inbound_PO_cXML_Process\Inbound_PO_cXML_Process.btproj", "{4A2E3CD7-F06D-4C9F-831B-6F921F4400EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inbound_PO_cXML_To_ERP", "Inbound_PO_cXML_To_ERP\Inbound_PO_cXML_To_ERP.btproj", "{6B81A044-8683-45D2-83F5-AC8B722C0379}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inbound_Status_Doc_cXML_Process", "Inbound_Status_Doc_cXML_Process\Inbound_Status_Doc_cXML_Process.btproj", "{083C6E3F-7559-44BA-8964-134CB65A2819}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Outbound_PO_cXML_Bypass_Pickup", "Outbound_PO_cXML_Bypass_Pickup\Outbound_PO_cXML_Bypass_Pickup.btproj", "{F265F8A5-AB54-424C-A5F9-465CDE024FB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Outbound_PO_cXML_Pickup", "Outbound_PO_cXML_Pickup\Outbound_PO_cXML_Pickup.btproj", "{66AB420C-583C-4728-BEF0-029C6F859153}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pipelines_EDI", "Pipelines_EDI\Pipelines_EDI.btproj", "{F74EE9FF-F7A9-448C-B068-4AC9FDB4C514}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inbound_Status_Doc_X12_Receive", "Inbound_Status_Doc_X12_Receive\Inbound_Status_Doc_X12_Receive.btproj", "{2E1FE5FF-AE5A-4D2D-B6F0-A14213C821D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inbound_Status_Doc_X12_Process", "Inbound_Status_Doc_X12_Process\Inbound_Status_Doc_X12_Process.btproj", "{7FD3385A-62A2-43E9-97DE-8095B5B743B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EdiSchemas", "EdiSchemas\EdiSchemas.btproj", "{DD566F94-F960-41D5-A3B6-FDFD60F1F91C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Outbound_PO_X12_Pickup", "Outbound_PO_X12_Pickup\Outbound_PO_X12_Pickup.btproj", "{D77F275A-10AC-463A-9165-4D2336072FEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Outbound_Status_Doc_cXML_PickUp", "Outbound_Status_Doc_cXML_PickUp\Outbound_Status_Doc_cXML_PickUp.btproj", "{1259FBA2-D91C-4C23-81CA-A8DFD44C5778}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pipelines_AS2", "Pipelines_AS2\Pipelines_AS2.btproj", "{89413C97-AECD-4DCF-B86F-EAE81C3BBF37}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E5DF6FB1-CE5F-4DC3-85B6-562807B05321}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5DF6FB1-CE5F-4DC3-85B6-562807B05321}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5DF6FB1-CE5F-4DC3-85B6-562807B05321}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5DF6FB1-CE5F-4DC3-85B6-562807B05321}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0EE23CD-18CC-4496-BD51-3C20289DD6EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0EE23CD-18CC-4496-BD51-3C20289DD6EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0EE23CD-18CC-4496-BD51-3C20289DD6EA}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D0EE23CD-18CC-4496-BD51-3C20289DD6EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0EE23CD-18CC-4496-BD51-3C20289DD6EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0EE23CD-18CC-4496-BD51-3C20289DD6EA}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{DA86414D-E34C-4287-A7C1-1EC1D6ED618D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA86414D-E34C-4287-A7C1-1EC1D6ED618D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA86414D-E34C-4287-A7C1-1EC1D6ED618D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA86414D-E34C-4287-A7C1-1EC1D6ED618D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6EE85D1-032C-49B1-A62B-58F0D11C100D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6EE85D1-032C-49B1-A62B-58F0D11C100D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6EE85D1-032C-49B1-A62B-58F0D11C100D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D6EE85D1-032C-49B1-A62B-58F0D11C100D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6EE85D1-032C-49B1-A62B-58F0D11C100D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6EE85D1-032C-49B1-A62B-58F0D11C100D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{B69EF752-C9B9-479E-BEFA-42451936FCBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B69EF752-C9B9-479E-BEFA-42451936FCBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B69EF752-C9B9-479E-BEFA-42451936FCBE}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B69EF752-C9B9-479E-BEFA-42451936FCBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B69EF752-C9B9-479E-BEFA-42451936FCBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B69EF752-C9B9-479E-BEFA-42451936FCBE}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{4A2E3CD7-F06D-4C9F-831B-6F921F4400EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A2E3CD7-F06D-4C9F-831B-6F921F4400EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A2E3CD7-F06D-4C9F-831B-6F921F4400EB}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{4A2E3CD7-F06D-4C9F-831B-6F921F4400EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A2E3CD7-F06D-4C9F-831B-6F921F4400EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A2E3CD7-F06D-4C9F-831B-6F921F4400EB}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{6B81A044-8683-45D2-83F5-AC8B722C0379}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B81A044-8683-45D2-83F5-AC8B722C0379}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B81A044-8683-45D2-83F5-AC8B722C0379}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{6B81A044-8683-45D2-83F5-AC8B722C0379}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B81A044-8683-45D2-83F5-AC8B722C0379}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B81A044-8683-45D2-83F5-AC8B722C0379}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{083C6E3F-7559-44BA-8964-134CB65A2819}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{083C6E3F-7559-44BA-8964-134CB65A2819}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{083C6E3F-7559-44BA-8964-134CB65A2819}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{083C6E3F-7559-44BA-8964-134CB65A2819}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{083C6E3F-7559-44BA-8964-134CB65A2819}.Release|Any CPU.Build.0 = Release|Any CPU
+		{083C6E3F-7559-44BA-8964-134CB65A2819}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{F265F8A5-AB54-424C-A5F9-465CDE024FB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F265F8A5-AB54-424C-A5F9-465CDE024FB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F265F8A5-AB54-424C-A5F9-465CDE024FB6}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F265F8A5-AB54-424C-A5F9-465CDE024FB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F265F8A5-AB54-424C-A5F9-465CDE024FB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F265F8A5-AB54-424C-A5F9-465CDE024FB6}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{66AB420C-583C-4728-BEF0-029C6F859153}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66AB420C-583C-4728-BEF0-029C6F859153}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66AB420C-583C-4728-BEF0-029C6F859153}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{66AB420C-583C-4728-BEF0-029C6F859153}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66AB420C-583C-4728-BEF0-029C6F859153}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66AB420C-583C-4728-BEF0-029C6F859153}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{F74EE9FF-F7A9-448C-B068-4AC9FDB4C514}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F74EE9FF-F7A9-448C-B068-4AC9FDB4C514}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F74EE9FF-F7A9-448C-B068-4AC9FDB4C514}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F74EE9FF-F7A9-448C-B068-4AC9FDB4C514}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F74EE9FF-F7A9-448C-B068-4AC9FDB4C514}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F74EE9FF-F7A9-448C-B068-4AC9FDB4C514}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{2E1FE5FF-AE5A-4D2D-B6F0-A14213C821D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E1FE5FF-AE5A-4D2D-B6F0-A14213C821D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E1FE5FF-AE5A-4D2D-B6F0-A14213C821D7}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{2E1FE5FF-AE5A-4D2D-B6F0-A14213C821D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E1FE5FF-AE5A-4D2D-B6F0-A14213C821D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E1FE5FF-AE5A-4D2D-B6F0-A14213C821D7}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{7FD3385A-62A2-43E9-97DE-8095B5B743B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FD3385A-62A2-43E9-97DE-8095B5B743B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FD3385A-62A2-43E9-97DE-8095B5B743B6}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{7FD3385A-62A2-43E9-97DE-8095B5B743B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FD3385A-62A2-43E9-97DE-8095B5B743B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FD3385A-62A2-43E9-97DE-8095B5B743B6}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{DD566F94-F960-41D5-A3B6-FDFD60F1F91C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD566F94-F960-41D5-A3B6-FDFD60F1F91C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD566F94-F960-41D5-A3B6-FDFD60F1F91C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{DD566F94-F960-41D5-A3B6-FDFD60F1F91C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD566F94-F960-41D5-A3B6-FDFD60F1F91C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD566F94-F960-41D5-A3B6-FDFD60F1F91C}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{D77F275A-10AC-463A-9165-4D2336072FEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D77F275A-10AC-463A-9165-4D2336072FEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D77F275A-10AC-463A-9165-4D2336072FEC}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D77F275A-10AC-463A-9165-4D2336072FEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D77F275A-10AC-463A-9165-4D2336072FEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D77F275A-10AC-463A-9165-4D2336072FEC}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{1259FBA2-D91C-4C23-81CA-A8DFD44C5778}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1259FBA2-D91C-4C23-81CA-A8DFD44C5778}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1259FBA2-D91C-4C23-81CA-A8DFD44C5778}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{1259FBA2-D91C-4C23-81CA-A8DFD44C5778}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1259FBA2-D91C-4C23-81CA-A8DFD44C5778}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1259FBA2-D91C-4C23-81CA-A8DFD44C5778}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{89413C97-AECD-4DCF-B86F-EAE81C3BBF37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89413C97-AECD-4DCF-B86F-EAE81C3BBF37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89413C97-AECD-4DCF-B86F-EAE81C3BBF37}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{89413C97-AECD-4DCF-B86F-EAE81C3BBF37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89413C97-AECD-4DCF-B86F-EAE81C3BBF37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89413C97-AECD-4DCF-B86F-EAE81C3BBF37}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D1B04FB3-EC9F-41A3-A5B1-AC55451B863B}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 18
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://gss-tst-tf.govsci.com/gss
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = GSS_Biztalk.btaproj
+		SccLocalPath1 = .
+		SccProjectUniqueName2 = BizTalkLibrary\\BizTalkLibrary.csproj
+		SccProjectName2 = BizTalkLibrary
+		SccLocalPath2 = BizTalkLibrary
+		SccProjectUniqueName3 = Inbound_PO_cXML_Process\\Inbound_PO_cXML_Process.btproj
+		SccProjectName3 = Inbound_PO_cXML_Process
+		SccLocalPath3 = Inbound_PO_cXML_Process
+		SccProjectUniqueName4 = Inbound_PO_cXML_Receive\\Inbound_PO_cXML_Receive.btproj
+		SccProjectName4 = Inbound_PO_cXML_Receive
+		SccLocalPath4 = Inbound_PO_cXML_Receive
+		SccProjectUniqueName5 = Inbound_PO_cXML_To_ERP\\Inbound_PO_cXML_To_ERP.btproj
+		SccProjectName5 = Inbound_PO_cXML_To_ERP
+		SccLocalPath5 = Inbound_PO_cXML_To_ERP
+		SccProjectUniqueName6 = Inbound_Status_Doc_cXML_Process\\Inbound_Status_Doc_cXML_Process.btproj
+		SccProjectName6 = Inbound_Status_Doc_cXML_Process
+		SccLocalPath6 = Inbound_Status_Doc_cXML_Process
+		SccProjectUniqueName7 = Inbound_Status_Doc_cXML_Receive\\Inbound_Status_Doc_cXML_Receive.btproj
+		SccProjectName7 = Inbound_Status_Doc_cXML_Receive
+		SccLocalPath7 = Inbound_Status_Doc_cXML_Receive
+		SccProjectUniqueName8 = Outbound_PO_cXML_Pickup\\Outbound_PO_cXML_Pickup.btproj
+		SccProjectName8 = Outbound_PO_cXML_Pickup
+		SccLocalPath8 = Outbound_PO_cXML_Pickup
+		SccProjectUniqueName9 = Outbound_PO_cXML_Bypass_Pickup\\Outbound_PO_cXML_Bypass_Pickup.btproj
+		SccProjectName9 = Outbound_PO_cXML_Bypass_Pickup
+		SccLocalPath9 = Outbound_PO_cXML_Bypass_Pickup
+		SccProjectUniqueName10 = Inbound_PO_cXML_Check\\Inbound_PO_cXML_Check.btproj
+		SccProjectName10 = Inbound_PO_cXML_Check
+		SccLocalPath10 = Inbound_PO_cXML_Check
+		SccProjectUniqueName11 = Pipelines_EDI\\Pipelines_EDI.btproj
+		SccProjectName11 = Pipelines_EDI
+		SccLocalPath11 = Pipelines_EDI
+		SccProjectUniqueName12 = Inbound_Status_Doc_X12_Receive\\Inbound_Status_Doc_X12_Receive.btproj
+		SccProjectName12 = Inbound_Status_Doc_X12_Receive
+		SccLocalPath12 = Inbound_Status_Doc_X12_Receive
+		SccProjectUniqueName13 = Inbound_Status_Doc_X12_Process\\Inbound_Status_Doc_X12_Process.btproj
+		SccProjectName13 = Inbound_Status_Doc_X12_Process
+		SccLocalPath13 = Inbound_Status_Doc_X12_Process
+		SccProjectUniqueName14 = EdiSchemas\\EdiSchemas.btproj
+		SccProjectName14 = EdiSchemas
+		SccLocalPath14 = EdiSchemas
+		SccProjectUniqueName15 = Outbound_PO_X12_Pickup\\Outbound_PO_X12_Pickup.btproj
+		SccProjectName15 = Outbound_PO_X12_Pickup
+		SccLocalPath15 = Outbound_PO_X12_Pickup
+		SccProjectUniqueName16 = Outbound_Status_Doc_cXML_PickUp\\Outbound_Status_Doc_cXML_PickUp.btproj
+		SccProjectName16 = Outbound_Status_Doc_cXML_PickUp
+		SccLocalPath16 = Outbound_Status_Doc_cXML_PickUp
+		SccProjectUniqueName17 = Pipelines_AS2\\Pipelines_AS2.btproj
+		SccProjectName17 = Pipelines_AS2
+		SccLocalPath17 = Pipelines_AS2
+	EndGlobalSection
+EndGlobal

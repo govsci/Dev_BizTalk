@@ -1,0 +1,5 @@
+R:\Source\GSS_Biztalk\Outbound_Status_Doc_cXML_PickUp\bin\Debug\Outbound_Status_Doc_cXML_PickUp.dll
+R:\Source\GSS_Biztalk\Outbound_Status_Doc_cXML_PickUp\bin\Debug\Outbound_Status_Doc_cXML_PickUp.pdb
+R:\Source\GSS_Biztalk\Outbound_Status_Doc_cXML_PickUp\obj\Debug\Outbound_Status_Doc_cXML_PickUp.btproj.CoreCompileInputs.cache
+R:\Source\GSS_Biztalk\Outbound_Status_Doc_cXML_PickUp\obj\Debug\Outbound_Status_Doc_cXML_PickUp.dll
+R:\Source\GSS_Biztalk\Outbound_Status_Doc_cXML_PickUp\obj\Debug\Outbound_Status_Doc_cXML_PickUp.pdb

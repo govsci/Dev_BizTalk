@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DA86414D-E34C-4287-A7C1-1EC1D6ED618D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BizTalkLibrary</RootNamespace>
+    <AssemblyName>BizTalkLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>BizTalkLibrary_key.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="PdfSharp">
+      <HintPath>..\..\PdfSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Constants.cs" />
+    <Compile Include="Classes\Create_Cxml.cs" />
+    <Compile Include="Classes\Create_PDF.cs" />
+    <Compile Include="Classes\CustomTextEncrypt.cs" />
+    <Compile Include="Classes\Database.cs" />
+    <Compile Include="Classes\ERP_Item_Functions.cs" />
+    <Compile Include="Classes\ERP_Web_Service_Functions.cs" />
+    <Compile Include="Classes\Global.cs" />
+    <Compile Include="Objects\Invoice.cs" />
+    <Compile Include="Orchestrations\Inbound_PO_cXML_Check.cs" />
+    <Compile Include="Orchestrations\Inbound_PO_cXML_Process.cs" />
+    <Compile Include="Orchestrations\Outbound_cXML_PO.cs" />
+    <Compile Include="Orchestrations\Inbound_PO_cXML_To_ERP.cs" />
+    <Compile Include="Classes\MailNotification.cs" />
+    <Compile Include="Orchestrations\OrchestrationFunctions.cs" />
+    <Compile Include="Orchestrations\Inbound_Status_Doc_cXML_Process.cs" />
+    <Compile Include="Objects\ASN.cs" />
+    <Compile Include="Objects\AutoResponder.cs" />
+    <Compile Include="Objects\Credentials.cs" />
+    <Compile Include="Objects\Customer.cs" />
+    <Compile Include="Objects\CxmlCustomerContact.cs" />
+    <Compile Include="Objects\EmailConfig.cs" />
+    <Compile Include="Objects\Order.cs" />
+    <Compile Include="Objects\OrderConfirmation.cs" />
+    <Compile Include="Objects\Payment.cs" />
+    <Compile Include="Objects\Phone.cs" />
+    <Compile Include="Objects\SalesQuote.cs" />
+    <Compile Include="Objects\Address.cs" />
+    <Compile Include="Objects\Vendor.cs" />
+    <Compile Include="Objects\XMLItemBlock.cs" />
+    <Compile Include="Orchestrations\Outbound_Status_Doc_cXML.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_AutoPostDoc\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_PurchaseOrder\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_CustomerContact\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_CustomerCreditCards\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_ItemCard\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_SalesOrder\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_ShipToAddress\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="BizTalkLibrary_key.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_AutoPostDoc\AutoPostDocument.wsdl" />
+    <None Include="Web References\WS_AutoPostDoc\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_CustomerContact\CustomerContact.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_CustomerCreditCards\CustomerCreditCards.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_PurchaseOrder\PurchaseOrder.wsdl" />
+    <None Include="Web References\WS_PurchaseOrder\PurchaseOrder1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_PurchaseOrder\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_CustomerContact\CustomerContact.wsdl" />
+    <None Include="Web References\WS_CustomerContact\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_CustomerCreditCards\CustomerCreditCards.wsdl" />
+    <None Include="Web References\WS_CustomerCreditCards\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_ItemCard\ItemCard.wsdl" />
+    <None Include="Web References\WS_ItemCard\ItemCard1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_ItemCard\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_SalesOrder\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_SalesOrder\SalesOrder.wsdl" />
+    <None Include="Web References\WS_SalesOrder\SalesOrder1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_ShipToAddress\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_ShipToAddress\ShipToAddress.wsdl" />
+    <None Include="Web References\WS_ShipToAddress\ShipToAddress1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://172.16.25.81:7047/DynamicsNAV90/WS/Government%2520Scientific%2520Source/Codeunit/AutoPostDocument">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_AutoPostDoc\</RelPath>
+      <UpdateFromURL>http://172.16.25.81:7047/DynamicsNAV90/WS/Government%2520Scientific%2520Source/Codeunit/AutoPostDocument</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>BizTalkLibrary_AutoPostDoc_AutoPostDocument</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://172.16.25.81:7047/DynamicsNAV90/WS/Government%2520Scientific%2520Source/Page/CustomerContact">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_CustomerContact\</RelPath>
+      <UpdateFromURL>http://172.16.25.81:7047/DynamicsNAV90/WS/Government%2520Scientific%2520Source/Page/CustomerContact</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>BizTalkLibrary_CustomerCard_CustomerContact_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://172.16.25.81:7047/DynamicsNAV90/WS/Government%2520Scientific%2520Source/Page/CustomerCreditCards">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_CustomerCreditCards\</RelPath>
+      <UpdateFromURL>http://172.16.25.81:7047/DynamicsNAV90/WS/Government%2520Scientific%2520Source/Page/CustomerCreditCards</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>BizTalkLibrary_TstCustomerCreditCards_CustomerCreditCards_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://172.16.25.81:7047/DynamicsNAV90/WS/Government%2520Scientific%2520Source/Page/ItemCard">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_ItemCard\</RelPath>
+      <UpdateFromURL>http://172.16.25.81:7047/DynamicsNAV90/WS/Government%2520Scientific%2520Source/Page/ItemCard</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>BizTalkLibrary_ItemCard_ItemCard_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://172.16.25.81:7047/DynamicsNAV90/WS/Government%2520Scientific%2520Source/Page/PurchaseOrder">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_PurchaseOrder\</RelPath>
+      <UpdateFromURL>http://172.16.25.81:7047/DynamicsNAV90/WS/Government%2520Scientific%2520Source/Page/PurchaseOrder</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>BizTalkLibrary_PurchaseOrder_PurchaseOrder_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://172.16.25.81:7047/DynamicsNAV90/WS/Government%2520Scientific%2520Source/Page/SalesOrder">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_SalesOrder\</RelPath>
+      <UpdateFromURL>http://172.16.25.81:7047/DynamicsNAV90/WS/Government%2520Scientific%2520Source/Page/SalesOrder</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>BizTalkLibrary_TstSalesOrders_SalesOrder_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://172.16.25.81:7047/DynamicsNAV90/WS/Government%2520Scientific%2520Source/Page/ShipToAddress">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_ShipToAddress\</RelPath>
+      <UpdateFromURL>http://172.16.25.81:7047/DynamicsNAV90/WS/Government%2520Scientific%2520Source/Page/ShipToAddress</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>BizTalkLibrary_ShipToAddress_ShipToAddress_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>"C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.7.2 Tools\gacutil.exe" -i $(TargetPath)</PostBuildEvent>
+  </PropertyGroup>
+</Project>

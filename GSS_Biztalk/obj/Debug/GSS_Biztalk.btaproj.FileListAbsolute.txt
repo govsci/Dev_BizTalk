@@ -1,0 +1,6 @@
+R:\Source\GSS_Biztalk\bin\Debug\Binding.xml
+R:\Source\GSS_Biztalk\bin\Debug\BizTalkServerInventory.json
+R:\Source\GSS_Biztalk\bin\Debug\GSS_Biztalk.dll
+R:\Source\GSS_Biztalk\obj\Debug\GSS_Biztalk.btaproj.CoreCompileInputs.cache
+R:\Source\GSS_Biztalk\obj\Debug\GSS_Biztalk.dll
+R:\Source\GSS_Biztalk\obj\Debug\GSS_Biztalk.btaproj.AssemblyReference.cache

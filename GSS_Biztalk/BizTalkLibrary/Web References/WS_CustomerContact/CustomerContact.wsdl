@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:tns="urn:microsoft-dynamics-schemas/page/customercontact" targetNamespace="urn:microsoft-dynamics-schemas/page/customercontact" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema elementFormDefault="qualified" targetNamespace="urn:microsoft-dynamics-schemas/page/customercontact" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:simpleType name="Marketing_Pref">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="Fax" />
+          <xsd:enumeration value="_E_Mail" />
+          <xsd:enumeration value="_No_Ads" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="_x0031_234">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="_x0031_" />
+          <xsd:enumeration value="_x0032_" />
+          <xsd:enumeration value="_x0033_" />
+          <xsd:enumeration value="_x0034_" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="Title">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="End_User" />
+          <xsd:enumeration value="CC_End_User" />
+          <xsd:enumeration value="Purchasing_Agent" />
+          <xsd:enumeration value="Group_Team_Ldr_CMDR" />
+          <xsd:enumeration value="Lab_Mgr_Supv" />
+          <xsd:enumeration value="Secretary" />
+          <xsd:enumeration value="Equip_Buyer" />
+          <xsd:enumeration value="Safety_Off_1st_Rspndr" />
+          <xsd:enumeration value="Supply_Logistics" />
+          <xsd:enumeration value="Equip_Service_Engineer" />
+          <xsd:enumeration value="Accounting" />
+          <xsd:enumeration value="No_Longer_There" />
+          <xsd:enumeration value="Whse_Rcvg" />
+          <xsd:enumeration value="Small_Bus_Admin" />
+          <xsd:enumeration value="Contracting_Officer" />
+          <xsd:enumeration value="Advisor_Coord_Trainer" />
+          <xsd:enumeration value="Director_Owner" />
+          <xsd:enumeration value="Reseller" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="Lab_Type">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="Clinical_Medical" />
+          <xsd:enumeration value="Water__x0026__Sewage" />
+          <xsd:enumeration value="Forensic_Patho_Chem" />
+          <xsd:enumeration value="Life_Clinical_Chem" />
+          <xsd:enumeration value="Life_Chem" />
+          <xsd:enumeration value="Earth_Energy__x0026__Fuel" />
+          <xsd:enumeration value="Pharmaceutical" />
+          <xsd:enumeration value="EnviroAnalytical" />
+          <xsd:enumeration value="Life_Biology" />
+          <xsd:enumeration value="Manufacturing" />
+          <xsd:enumeration value="Life_BioEnviro_Chem" />
+          <xsd:enumeration value="Life_Forensic_Chem" />
+          <xsd:enumeration value="EMT_Fire__x0026__Safety" />
+          <xsd:enumeration value="HLS__x0026__WMD" />
+          <xsd:enumeration value="Industrial__x0026__Commercial" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="Discipline">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="General_Biology" />
+          <xsd:enumeration value="Chromatography" />
+          <xsd:enumeration value="Clinical_Chemistry_Respiratory" />
+          <xsd:enumeration value="Life_Science_Unknown" />
+          <xsd:enumeration value="Animal_Testing_Exp_Biology" />
+          <xsd:enumeration value="Hematology" />
+          <xsd:enumeration value="Histology_Cytology_Morgue" />
+          <xsd:enumeration value="Microbiology__x0026__Fungi" />
+          <xsd:enumeration value="Phlebotomy_Serology_Clinical_Diag" />
+          <xsd:enumeration value="Other_Analytical_Chemistry" />
+          <xsd:enumeration value="Water_Testing_pH_DO_ISE" />
+          <xsd:enumeration value="Blood_Bank" />
+          <xsd:enumeration value="BioEnviro_Ind_Hygiene" />
+          <xsd:enumeration value="Hazmat_Safety_Security_WMD" />
+          <xsd:enumeration value="DNA_RNA_PCR__x0026__MolecularBio" />
+          <xsd:enumeration value="Peptides_Proteins__x0026__Biochemistry" />
+          <xsd:enumeration value="Immunology_Virology_Nursing_Infection_Cntrl" />
+          <xsd:enumeration value="Cell__x0026__Tissue_Culture" />
+          <xsd:enumeration value="Genonmics__x0026__Proteomics" />
+          <xsd:enumeration value="Cell_Signaling__x0026__Neuroscience" />
+          <xsd:enumeration value="Automation_HTS_Robotics" />
+          <xsd:enumeration value="Industrial__x0026__Commercial" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:complexType name="CustomerContact">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="1" name="Key" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Sell_to_Customer_No" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Contact_ID" type="xsd:int" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Prefix" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="First_Name" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Middle_Name" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Last_Name" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Suffix" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Contact_Name" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Calendars" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Unsubscribe" type="xsd:boolean" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Con_Sent" type="xsd:boolean" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Marketing_Pref" type="tns:Marketing_Pref" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="_x0031_234" type="tns:_x0031_234" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Building" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Room_x0023_" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="US_Area_Code" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Phone_Prefix" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Number" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Extension" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="International_Phone_Number" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="FAX_Area_Code" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="FAX_Prefix" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="FAX_Number" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Title" type="tns:Title" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Lab_Type" type="tns:Lab_Type" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Discipline" type="tns:Discipline" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Contact_E_Mail" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Contact_Comments" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Notes" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="MKTG_Address" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="City" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="State" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="zip" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Contact_Phone" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Contact_Fax" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Color" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="CustomerContact_List">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="unbounded" name="CustomerContact" type="tns:CustomerContact" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:simpleType name="CustomerContact_Fields">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="Sell_to_Customer_No" />
+          <xsd:enumeration value="Contact_ID" />
+          <xsd:enumeration value="Prefix" />
+          <xsd:enumeration value="First_Name" />
+          <xsd:enumeration value="Middle_Name" />
+          <xsd:enumeration value="Last_Name" />
+          <xsd:enumeration value="Suffix" />
+          <xsd:enumeration value="Contact_Name" />
+          <xsd:enumeration value="Calendars" />
+          <xsd:enumeration value="Unsubscribe" />
+          <xsd:enumeration value="Con_Sent" />
+          <xsd:enumeration value="Marketing_Pref" />
+          <xsd:enumeration value="_x0031_234" />
+          <xsd:enumeration value="Building" />
+          <xsd:enumeration value="Room_x0023_" />
+          <xsd:enumeration value="US_Area_Code" />
+          <xsd:enumeration value="Phone_Prefix" />
+          <xsd:enumeration value="Number" />
+          <xsd:enumeration value="Extension" />
+          <xsd:enumeration value="International_Phone_Number" />
+          <xsd:enumeration value="FAX_Area_Code" />
+          <xsd:enumeration value="FAX_Prefix" />
+          <xsd:enumeration value="FAX_Number" />
+          <xsd:enumeration value="Title" />
+          <xsd:enumeration value="Lab_Type" />
+          <xsd:enumeration value="Discipline" />
+          <xsd:enumeration value="Contact_E_Mail" />
+          <xsd:enumeration value="Contact_Comments" />
+          <xsd:enumeration value="Notes" />
+          <xsd:enumeration value="MKTG_Address" />
+          <xsd:enumeration value="City" />
+          <xsd:enumeration value="State" />
+          <xsd:enumeration value="zip" />
+          <xsd:enumeration value="Contact_Phone" />
+          <xsd:enumeration value="Contact_Fax" />
+          <xsd:enumeration value="Color" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:complexType name="CustomerContact_Filter">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="Field" type="tns:CustomerContact_Fields" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="Criteria" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="Read">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="Sell_to_Customer_No" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="Contact_ID" type="xsd:int" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Read_Result">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="CustomerContact" type="tns:CustomerContact" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ReadByRecId">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="recId" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ReadByRecId_Result">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="CustomerContact" type="tns:CustomerContact" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ReadMultiple">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="unbounded" name="filter" type="tns:CustomerContact_Filter" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="bookmarkKey" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="setSize" type="xsd:int" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ReadMultiple_Result">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="ReadMultiple_Result" type="tns:CustomerContact_List" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="IsUpdated">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="Key" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="IsUpdated_Result">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="IsUpdated_Result" type="xsd:boolean" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetRecIdFromKey">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="Key" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetRecIdFromKey_Result">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="GetRecIdFromKey_Result" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Create">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="CustomerContact" type="tns:CustomerContact" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Create_Result">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="CustomerContact" type="tns:CustomerContact" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="CreateMultiple">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="CustomerContact_List" type="tns:CustomerContact_List" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="CreateMultiple_Result">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="CustomerContact_List" type="tns:CustomerContact_List" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Update">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="CustomerContact" type="tns:CustomerContact" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Update_Result">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="CustomerContact" type="tns:CustomerContact" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="UpdateMultiple">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="CustomerContact_List" type="tns:CustomerContact_List" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="UpdateMultiple_Result">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="CustomerContact_List" type="tns:CustomerContact_List" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Delete">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="Key" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Delete_Result">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="Delete_Result" type="xsd:boolean" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </types>
+  <message name="Read">
+    <part name="parameters" element="tns:Read" />
+  </message>
+  <message name="Read_Result">
+    <part name="parameters" element="tns:Read_Result" />
+  </message>
+  <message name="ReadByRecId">
+    <part name="parameters" element="tns:ReadByRecId" />
+  </message>
+  <message name="ReadByRecId_Result">
+    <part name="parameters" element="tns:ReadByRecId_Result" />
+  </message>
+  <message name="ReadMultiple">
+    <part name="parameters" element="tns:ReadMultiple" />
+  </message>
+  <message name="ReadMultiple_Result">
+    <part name="parameters" element="tns:ReadMultiple_Result" />
+  </message>
+  <message name="IsUpdated">
+    <part name="parameters" element="tns:IsUpdated" />
+  </message>
+  <message name="IsUpdated_Result">
+    <part name="parameters" element="tns:IsUpdated_Result" />
+  </message>
+  <message name="GetRecIdFromKey">
+    <part name="parameters" element="tns:GetRecIdFromKey" />
+  </message>
+  <message name="GetRecIdFromKey_Result">
+    <part name="parameters" element="tns:GetRecIdFromKey_Result" />
+  </message>
+  <message name="Create">
+    <part name="parameters" element="tns:Create" />
+  </message>
+  <message name="Create_Result">
+    <part name="parameters" element="tns:Create_Result" />
+  </message>
+  <message name="CreateMultiple">
+    <part name="parameters" element="tns:CreateMultiple" />
+  </message>
+  <message name="CreateMultiple_Result">
+    <part name="parameters" element="tns:CreateMultiple_Result" />
+  </message>
+  <message name="Update">
+    <part name="parameters" element="tns:Update" />
+  </message>
+  <message name="Update_Result">
+    <part name="parameters" element="tns:Update_Result" />
+  </message>
+  <message name="UpdateMultiple">
+    <part name="parameters" element="tns:UpdateMultiple" />
+  </message>
+  <message name="UpdateMultiple_Result">
+    <part name="parameters" element="tns:UpdateMultiple_Result" />
+  </message>
+  <message name="Delete">
+    <part name="parameters" element="tns:Delete" />
+  </message>
+  <message name="Delete_Result">
+    <part name="parameters" element="tns:Delete_Result" />
+  </message>
+  <portType name="CustomerContact_Port">
+    <operation name="Read">
+      <input name="Read" message="tns:Read" />
+      <output name="Read_Result" message="tns:Read_Result" />
+    </operation>
+    <operation name="ReadByRecId">
+      <input name="ReadByRecId" message="tns:ReadByRecId" />
+      <output name="ReadByRecId_Result" message="tns:ReadByRecId_Result" />
+    </operation>
+    <operation name="ReadMultiple">
+      <input name="ReadMultiple" message="tns:ReadMultiple" />
+      <output name="ReadMultiple_Result" message="tns:ReadMultiple_Result" />
+    </operation>
+    <operation name="IsUpdated">
+      <input name="IsUpdated" message="tns:IsUpdated" />
+      <output name="IsUpdated_Result" message="tns:IsUpdated_Result" />
+    </operation>
+    <operation name="GetRecIdFromKey">
+      <input name="GetRecIdFromKey" message="tns:GetRecIdFromKey" />
+      <output name="GetRecIdFromKey_Result" message="tns:GetRecIdFromKey_Result" />
+    </operation>
+    <operation name="Create">
+      <input name="Create" message="tns:Create" />
+      <output name="Create_Result" message="tns:Create_Result" />
+    </operation>
+    <operation name="CreateMultiple">
+      <input name="CreateMultiple" message="tns:CreateMultiple" />
+      <output name="CreateMultiple_Result" message="tns:CreateMultiple_Result" />
+    </operation>
+    <operation name="Update">
+      <input name="Update" message="tns:Update" />
+      <output name="Update_Result" message="tns:Update_Result" />
+    </operation>
+    <operation name="UpdateMultiple">
+      <input name="UpdateMultiple" message="tns:UpdateMultiple" />
+      <output name="UpdateMultiple_Result" message="tns:UpdateMultiple_Result" />
+    </operation>
+    <operation name="Delete">
+      <input name="Delete" message="tns:Delete" />
+      <output name="Delete_Result" message="tns:Delete_Result" />
+    </operation>
+  </portType>
+  <binding name="CustomerContact_Binding" type="tns:CustomerContact_Port">
+    <binding transport="http://schemas.xmlsoap.org/soap/http" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    <operation name="Read">
+      <operation soapAction="urn:microsoft-dynamics-schemas/page/customercontact:Read" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="Read">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="Read_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="ReadByRecId">
+      <operation soapAction="urn:microsoft-dynamics-schemas/page/customercontact:ReadByRecId" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="ReadByRecId">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="ReadByRecId_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="ReadMultiple">
+      <operation soapAction="urn:microsoft-dynamics-schemas/page/customercontact:ReadMultiple" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="ReadMultiple">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="ReadMultiple_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="IsUpdated">
+      <operation soapAction="urn:microsoft-dynamics-schemas/page/customercontact:IsUpdated" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="IsUpdated">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="IsUpdated_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GetRecIdFromKey">
+      <operation soapAction="urn:microsoft-dynamics-schemas/page/customercontact:GetRecIdFromKey" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GetRecIdFromKey">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GetRecIdFromKey_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="Create">
+      <operation soapAction="urn:microsoft-dynamics-schemas/page/customercontact:Create" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="Create">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="Create_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="CreateMultiple">
+      <operation soapAction="urn:microsoft-dynamics-schemas/page/customercontact:CreateMultiple" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="CreateMultiple">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="CreateMultiple_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="Update">
+      <operation soapAction="urn:microsoft-dynamics-schemas/page/customercontact:Update" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="Update">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="Update_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="UpdateMultiple">
+      <operation soapAction="urn:microsoft-dynamics-schemas/page/customercontact:UpdateMultiple" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="UpdateMultiple">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="UpdateMultiple_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="Delete">
+      <operation soapAction="urn:microsoft-dynamics-schemas/page/customercontact:Delete" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="Delete">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="Delete_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+  </binding>
+  <service name="CustomerContact_Service">
+    <port name="CustomerContact_Port" binding="tns:CustomerContact_Binding">
+      <address location="http://172.16.25.81:7047/DynamicsNAV90/WS/Government%20Scientific%20Source/Page/CustomerContact" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    </port>
+  </service>
+</definitions>

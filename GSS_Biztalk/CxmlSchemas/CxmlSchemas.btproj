@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4EC90269-DC59-4ACE-A1FB-1771C1757383}</ProjectGuid>
+    <ProjectTypeGuids>{EF7E3281-CD33-11D4-8326-00C04FA0CE8D};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>library</OutputType>
+    <GenericProcessing>true</GenericProcessing>
+    <RootNamespace>CxmlSchemas</RootNamespace>
+    <AssemblyName>CxmlSchemas</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <BpelCompliance>True</BpelCompliance>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>CxmlSchemas_key.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.BizTalk.DTDToXSDGenerator">
+      <HintPath>E:\Program Files (x86)\Microsoft BizTalk Server\Developer Tools\Schema Editor Extensions\Microsoft.BizTalk.DTDToXSDGenerator.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Name>System.Configuration</Name>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.Pipeline">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.DefaultPipelines">
+      <Name>Microsoft.BizTalk.DefaultPipelines</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.GlobalPropertySchemas">
+      <Name>Microsoft.BizTalk.GlobalPropertySchemas</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.TestTools">
+      <Name>Microsoft.BizTalk.TestTools</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.XLANGs.BaseTypes">
+      <Name>Microsoft.XLANGs.BaseTypes</Name>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="schemas\cXML.xsd.cs">
+      <DependentUpon>cXML.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="schemas\cXMLinvoice.xsd.cs">
+      <DependentUpon>cXMLinvoice.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="schemas\Fulfill.xsd.cs">
+      <DependentUpon>Fulfill.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="schemas\PropertySchema.xsd.cs">
+      <DependentUpon>PropertySchema.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="schemas\xml.xsd.cs">
+      <DependentUpon>xml.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CxmlSchemas_key.pfx" />
+    <Schema Include="schemas\xml.xsd">
+      <TypeName>xml</TypeName>
+      <Namespace>CxmlSchemas.schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="schemas\PropertySchema.xsd">
+      <TypeName>PropertySchema</TypeName>
+      <Namespace>CxmlSchemas.schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="schemas\Fulfill.xsd">
+      <TypeName>Fulfill</TypeName>
+      <Namespace>CxmlSchemas.schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="schemas\EDI.xsd">
+      <TypeName>EDI</TypeName>
+      <Namespace>CxmlSchemas.schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="schemas\cXMLinvoice.xsd">
+      <TypeName>cXMLinvoice</TypeName>
+      <Namespace>CxmlSchemas.schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="schemas\cXML.xsd">
+      <TypeName>cXML</TypeName>
+      <Namespace>CxmlSchemas.schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\BizTalk\BizTalkC.targets" />
+</Project>

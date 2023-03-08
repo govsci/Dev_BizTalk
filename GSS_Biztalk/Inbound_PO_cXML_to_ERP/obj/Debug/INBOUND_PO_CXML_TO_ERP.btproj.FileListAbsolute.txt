@@ -1,0 +1,16 @@
+R:\Source\GSS_Biztalk\Incoming_PO_To_ERP\bin\Debug\Incoming_PO_To_ERP.dll
+R:\Source\GSS_Biztalk\Incoming_PO_To_ERP\bin\Debug\Incoming_PO_To_ERP.pdb
+R:\Source\GSS_Biztalk\Incoming_PO_To_ERP\bin\Debug\BizTalkLibrary.dll
+R:\Source\GSS_Biztalk\Incoming_PO_To_ERP\bin\Debug\CxmlSchemas.dll
+R:\Source\GSS_Biztalk\Incoming_PO_To_ERP\obj\Debug\INBOUND_PO_CXML_TO_ERP.btproj.CoreCompileInputs.cache
+R:\Source\GSS_Biztalk\Incoming_PO_To_ERP\obj\Debug\INBOUND_PO_CXML_TO_ERP.btproj.CopyComplete
+R:\Source\GSS_Biztalk\Incoming_PO_To_ERP\obj\Debug\Incoming_PO_To_ERP.dll
+R:\Source\GSS_Biztalk\Incoming_PO_To_ERP\obj\Debug\Incoming_PO_To_ERP.pdb
+R:\Source\GSS_Biztalk\INBOUND_PO_CXML_TO_ERP\bin\Debug\Inbound_PO_cXML_To_Erp.dll
+R:\Source\GSS_Biztalk\INBOUND_PO_CXML_TO_ERP\bin\Debug\Inbound_PO_cXML_To_Erp.pdb
+R:\Source\GSS_Biztalk\INBOUND_PO_CXML_TO_ERP\bin\Debug\BizTalkLibrary.dll
+R:\Source\GSS_Biztalk\INBOUND_PO_CXML_TO_ERP\obj\Debug\INBOUND_PO_CXML_TO_ERP.btproj.CoreCompileInputs.cache
+R:\Source\GSS_Biztalk\INBOUND_PO_CXML_TO_ERP\obj\Debug\INBOUND_PO_CXML_TO_ERP.btproj.CopyComplete
+R:\Source\GSS_Biztalk\INBOUND_PO_CXML_TO_ERP\obj\Debug\Inbound_PO_cXML_To_Erp.dll
+R:\Source\GSS_Biztalk\INBOUND_PO_CXML_TO_ERP\obj\Debug\Inbound_PO_cXML_To_Erp.pdb
+R:\Source\GSS_Biztalk\Inbound_PO_cXML_To_ERP\bin\Debug\EdiSchemas.dll

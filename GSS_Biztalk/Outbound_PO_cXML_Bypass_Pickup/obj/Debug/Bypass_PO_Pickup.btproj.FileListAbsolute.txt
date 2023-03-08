@@ -1,0 +1,9 @@
+R:\Source\GSS_Biztalk\Bypass_PO_Pickup\bin\Debug\Bypass_PO_Pickup.dll
+R:\Source\GSS_Biztalk\Bypass_PO_Pickup\bin\Debug\Bypass_PO_Pickup.pdb
+R:\Source\GSS_Biztalk\Bypass_PO_Pickup\bin\Debug\BizTalkLibrary.dll
+R:\Source\GSS_Biztalk\Bypass_PO_Pickup\bin\Debug\CxmlSchemas.dll
+R:\Source\GSS_Biztalk\Bypass_PO_Pickup\obj\Debug\Bypass_PO_Pickup.btproj.AssemblyReference.cache
+R:\Source\GSS_Biztalk\Bypass_PO_Pickup\obj\Debug\Bypass_PO_Pickup.btproj.CoreCompileInputs.cache
+R:\Source\GSS_Biztalk\Bypass_PO_Pickup\obj\Debug\Bypass_PO_Pickup.btproj.CopyComplete
+R:\Source\GSS_Biztalk\Bypass_PO_Pickup\obj\Debug\Bypass_PO_Pickup.dll
+R:\Source\GSS_Biztalk\Bypass_PO_Pickup\obj\Debug\Bypass_PO_Pickup.pdb

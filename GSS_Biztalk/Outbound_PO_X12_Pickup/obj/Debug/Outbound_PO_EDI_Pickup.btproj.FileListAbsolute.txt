@@ -1,0 +1,9 @@
+R:\Source\GSS_Biztalk\Outbound_PO_EDI_Pickup\bin\Debug\Outbound_PO_EDI_Pickup.dll
+R:\Source\GSS_Biztalk\Outbound_PO_EDI_Pickup\bin\Debug\Outbound_PO_EDI_Pickup.pdb
+R:\Source\GSS_Biztalk\Outbound_PO_EDI_Pickup\bin\Debug\CxmlSchemas.dll
+R:\Source\GSS_Biztalk\Outbound_PO_EDI_Pickup\obj\Debug\Outbound_PO_EDI_Pickup.btproj.CoreCompileInputs.cache
+R:\Source\GSS_Biztalk\Outbound_PO_EDI_Pickup\obj\Debug\Outbound_PO_EDI_Pickup.btproj.CopyComplete
+R:\Source\GSS_Biztalk\Outbound_PO_EDI_Pickup\obj\Debug\Outbound_PO_EDI_Pickup.dll
+R:\Source\GSS_Biztalk\Outbound_PO_EDI_Pickup\obj\Debug\Outbound_PO_EDI_Pickup.pdb
+R:\Source\GSS_Biztalk\Outbound_PO_EDI_Pickup\bin\Debug\BizTalkLibrary.dll
+R:\Source\GSS_Biztalk\Outbound_PO_EDI_Pickup\obj\Debug\Outbound_PO_EDI_Pickup.btproj.AssemblyReference.cache
